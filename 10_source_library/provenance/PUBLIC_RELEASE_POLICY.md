@@ -1,4 +1,4 @@
-# Public Release Policy Draft
+# Public Release Policy
 
 Status: Draft, not legal advice.
 

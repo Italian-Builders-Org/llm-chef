@@ -1,4 +1,4 @@
-# Provenance Policy Draft
+# Provenance Policy
 
 Status: Draft. Not approved.
 

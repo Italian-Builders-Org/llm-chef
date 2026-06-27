@@ -29,6 +29,7 @@ Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0
 | 2026-06-27 | OKF scoped to the structured data contract (books/recipes), not repo or folder structure. | Decided | OKF describes data products, not planning docs. | When the data contract is built. |
 | 2026-06-27 | Level B/C reinterpretation deferred (tracked in backlog B002). | Decided | Faithful editions first; reinterpretation is a derivative work with rights/editorial risk. | After V1 ships and editorial policy is set. |
 | 2026-06-27 | Defer confirming team members and roles; handle via GitHub issues/Projects. | Decided | Roles and ownership will be tracked in GitHub once the remote is connected. | When the GitHub remote/board is set up. |
+| 2026-06-27 | Raw source files: restricted team Google Drive as the archive (off-git); public hosting of rights-cleared assets deferred to build time (IB-014/IB-027); Slack for pointers only, not storage. | Decided | Drive fits 20GB + team access; Slack is unfit as a store; nothing copyrighted goes public until cleared. | When the product must serve cleared assets, or if Drive limits/access become a problem. |
 
 ## How To Add Decisions
 

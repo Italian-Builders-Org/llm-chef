@@ -2,7 +2,7 @@
 
 Status: Draft issue candidate backlog before GitHub is connected.
 
-Last updated: 2026-06-27 after issue-review pass (walking skeleton, parallel tracks, bootstrap split).
+Last updated: 2026-06-27 after issue-review pass (epics, owner-type/size, walking skeleton, parallel tracks, bootstrap split).
 
 These are GitHub issue candidates, not active assignments. They are intentionally task-shaped: each should be small enough to own, review, and close.
 
@@ -18,15 +18,32 @@ Backlog ideas live in `00_project_room/backlog/BACKLOG.md`. Do not convert every
 
 ## How To Run It
 
-After Phase 0, four tracks run **in parallel**, then converge:
+After Phase 0, work is grouped into **epics** (ownable deliverables). Epics A–C run **in parallel**, then converge:
 
-- **Track B** — source corpus, inventory, rights (the gating path).
-- **Track C** — product shell + walking skeleton (a thin live site early).
-- **Track D** — OCR feasibility (go/no-go on the faithful-edition premise).
-- **Convergence** — data contract + specs once the first pilot survives rights + OCR.
-- **Build → Ship → Post-V1.**
+- **Epic A** — source corpus, inventory, rights (the gating path).
+- **Epic B** — product shell + walking skeleton (a thin live site early).
+- **Epic C** — OCR feasibility + Level A text (go/no-go on the faithful-edition premise).
+- **Epics D–E** — data contract + specs once the first pilot survives rights + OCR.
+- **Epics F–H** — build → ship → post-V1.
+
+Owner-type: `core` (team) · `community` (open to all) · `specialist` (OCR/ML). Size: `xs/s/m/l`. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for how to pick up and PR work.
 
 Guard rail: the walking skeleton renders sample or verified-safe **metadata only**. No PDF/OCR/full text reaches the public until rights labels (IB-010) and UI rights gates (IB-028) exist.
+
+## Epics
+
+Each epic is an ownable deliverable. Encode as a milestone or tracking issue (see `CONTRIBUTOR_WORKFLOW.md`).
+
+| Epic | Theme | Owner-type | Issues |
+|---|---|---|---|
+| A | Source library & rights | core (+ community research) | IB-006, 007, 008, 009, 010, 011, 014, 038 |
+| B | Product foundation | core | IB-004, 005, 023 |
+| C | OCR & Level A text | specialist | IB-037, 015, 016 |
+| D | Data contract & taxonomy | core (+ community) | IB-012, 013, 021, 017 |
+| E | Product specs | core | IB-018, 019, 020, 022 |
+| F | Catalog & reader build | community | IB-024, 025, 026, 027, 028 |
+| G | Ship V1 | core | IB-029, 030 |
+| H | Post-V1 stretch | community + specialist | IB-031, 032, 033, 034, 036 |
 
 ## Phase 0 — Bootstrap (owner: Adam, off-tracker)
 
@@ -39,79 +56,79 @@ These create the tracker itself, so they are not GitHub issues. Do them once, by
 
 ## Dependency Order
 
-### Track B — Source, inventory, rights
+### Epic A — Source library & rights
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-006 Locate raw source corpus and storage options | planning | Phase 0 — start now |
-| IB-007 Normalize seed book inventory with slugs | planning | none — start now |
-| IB-008 Verify bibliographic metadata for seed books | planning | IB-007 |
-| IB-009 Identify V1 pre-1929 candidate pool | planning | IB-007, IB-008 |
-| IB-010 Assign public-release labels to V1 candidates | planning | IB-006, IB-009 |
-| IB-011 Select 3-5 pilot sources for V1 | planning | IB-010 |
-| IB-014 Define source asset manifest | planning | IB-006, IB-010 |
-| IB-038 Choose project licenses (code, data, content) | planning | none — start now |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-006 Locate raw source corpus and storage options | planning | core | S | Phase 0 — start now |
+| IB-007 Normalize seed book inventory with slugs | planning | core | M | none — start now |
+| IB-008 Verify bibliographic metadata for seed books | planning | community | M | IB-007 |
+| IB-009 Identify V1 pre-1929 candidate pool | planning | core | S | IB-007, IB-008 |
+| IB-010 Assign public-release labels to V1 candidates | planning | core | M | IB-006, IB-009 |
+| IB-011 Select 3-5 pilot sources for V1 | planning | core | S | IB-010 |
+| IB-014 Define source asset manifest | planning | core | S | IB-006, IB-010 |
+| IB-038 Choose project licenses (code, data, content) | planning | core | S | none — start now |
 
-### Track C — Product shell + walking skeleton
+### Epic B — Product foundation (shell + walking skeleton)
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-004 Create product repo shell | product | Phase 0 |
-| IB-005 Decide hosting/deployment stack (ADR) | planning | IB-004 |
-| IB-023 Scaffold web app + hello-world deploy | product | IB-004, IB-005 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-004 Create product repo shell | product | core | S | Phase 0 |
+| IB-005 Decide hosting/deployment stack (ADR) | planning | core | M | IB-004 |
+| IB-023 Scaffold web app + hello-world deploy | product | core | M | IB-004, IB-005 |
 
-### Track D — OCR feasibility
+### Epic C — OCR & Level A text
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-037 OCR feasibility go/no-go spike | planning | IB-011 |
-| IB-015 Define Level A OCR/text contract | planning | IB-010, IB-011, IB-037 (go) |
-| IB-016 Measure OCR quality for pilot sources | planning | IB-011, IB-015 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-037 OCR feasibility go/no-go spike | planning | specialist | M | IB-011 |
+| IB-015 Define Level A OCR/text contract | planning | specialist | M | IB-010, IB-011, IB-037 (go) |
+| IB-016 Measure OCR quality for pilot sources | planning | specialist | M | IB-011, IB-015 |
 
-### Convergence — Data contract & taxonomy
+### Epic D — Data contract & taxonomy
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-012 Define `books.json` schema | planning | IB-007 |
-| IB-013 Create seed `books.json` | planning | IB-012 |
-| IB-021 Version, publish, and validate the data contract | planning/product | IB-012, IB-013, IB-014 |
-| IB-017 Define catalog taxonomy v1 | planning | IB-008 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-012 Define `books.json` schema | planning | core | M | IB-007 |
+| IB-013 Create seed `books.json` | planning | community | S | IB-012 |
+| IB-021 Version, publish, and validate the data contract | planning/product | core | M | IB-012, IB-013, IB-014 |
+| IB-017 Define catalog taxonomy v1 | planning | core | M | IB-008 |
 
-### Convergence — Product specs
+### Epic E — Product specs
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-018 Write V1 product requirements spec | planning | IB-011, IB-013, IB-017 |
-| IB-019 Write Level A reader UX spec | planning | IB-015, IB-018 |
-| IB-020 Write catalog/search UX spec | planning | IB-013, IB-017, IB-018 |
-| IB-022 Define rights-gating product behavior | planning/product | IB-010, IB-018 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-018 Write V1 product requirements spec | planning | core | M | IB-011, IB-013, IB-017 |
+| IB-019 Write Level A reader UX spec | planning | core | M | IB-015, IB-018 |
+| IB-020 Write catalog/search UX spec | planning | core | M | IB-013, IB-017, IB-018 |
+| IB-022 Define rights-gating product behavior | planning/product | core | M | IB-010, IB-018 |
 
-### Build
+### Epic F — Catalog & reader build
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-024 Load catalog data in product app | product | IB-013, IB-021, IB-023 |
-| IB-025 Build catalog page and filters | product | IB-017, IB-020, IB-024 |
-| IB-026 Build book detail pages | product | IB-020, IB-024 |
-| IB-027 Build Level A reader for pilot source | product | IB-016, IB-019, IB-023 |
-| IB-028 Implement rights gates in UI | product | IB-022, IB-025, IB-026, IB-027 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-024 Load catalog data in product app | product | community | M | IB-013, IB-021, IB-023 |
+| IB-025 Build catalog page and filters | product | community | M | IB-017, IB-020, IB-024 |
+| IB-026 Build book detail pages | product | community | M | IB-020, IB-024 |
+| IB-027 Build Level A reader for pilot source | product | community | L | IB-016, IB-019, IB-023 |
+| IB-028 Implement rights gates in UI | product | core | M | IB-022, IB-025, IB-026, IB-027 |
 
-### Ship
+### Epic G — Ship V1
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-029 Deploy public V1 site | product | IB-024, IB-028 |
-| IB-030 Run V1 release QA | product | IB-025, IB-026, IB-027, IB-028, IB-029 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-029 Deploy public V1 site | product | core | S | IB-024, IB-028 |
+| IB-030 Run V1 release QA | product | core | M | IB-025, IB-026, IB-027, IB-028, IB-029 |
 
-### Post-V1 (stretch)
+### Epic H — Post-V1 stretch
 
-| Issue | Target repo | Depends on |
-|---|---|---|
-| IB-031 RAG feasibility spike | product/planning | IB-016, IB-030 |
-| IB-032 Digital timeline view | product | IB-017, IB-030 |
-| IB-033 Community contribution flow | product/planning | IB-030 |
-| IB-034 Speculative dish image policy/spike | planning | IB-030 |
-| IB-036 Editorial modernization planning | planning | IB-030, backlog B002 |
+| Issue | Repo | Owner | Size | Depends on |
+|---|---|---|---|---|
+| IB-031 RAG feasibility spike | product/planning | specialist | M | IB-016, IB-030 |
+| IB-032 Digital timeline view | product | community | M | IB-017, IB-030 |
+| IB-033 Community contribution flow | product/planning | core | M | IB-030 |
+| IB-034 Speculative dish image policy/spike | planning | core | S | IB-030 |
+| IB-036 Editorial modernization planning | planning | core | M | IB-030, backlog B002 |
 
 ## Candidates
 
@@ -140,6 +157,7 @@ These create the tracker itself, so they are not GitHub issues. Do them once, by
 **Dependencies:** none — start immediately
 **Output:** inventory of where PDFs/scans currently live and storage options for V1.
 **Success check:** each known source location is listed with owner, size, access method, physical-copy owner, scan creator if known, and whether it can be shared with contributors. Confirm Adam's note that original seed-list PDFs were scanned from his own physical copies.
+**Storage decision:** raw masters live in a restricted team Google Drive (off-git); rights-cleared pilot assets get hosted at build time (IB-014/IB-027); Slack is for pointers, not storage.
 **Out of scope:** uploading files to public storage.
 
 ### IB-007: Normalize seed book inventory with slugs
@@ -174,7 +192,7 @@ These create the tracker itself, so they are not GitHub issues. Do them once, by
 **Target repo:** planning
 **Labels:** `rights`, `source-library`, `blocking`, `v1`
 **Dependencies:** IB-006, IB-009
-**Output:** each V1 candidate gets a public-release label from `10_source_library/provenance/PUBLIC_RELEASE_POLICY_DRAFT.md` using the checklist in `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md`.
+**Output:** each V1 candidate gets a public-release label from `10_source_library/provenance/PUBLIC_RELEASE_POLICY.md` using the checklist in `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md`.
 **Success check:** every candidate has work-level, edition-level, source-file/provider, jurisdiction, and cultural-heritage checks marked complete or explicitly blocked; no candidate has public PDF/OCR/full-text status without `public_domain_verified` or an explicit equivalent decision.
 **Out of scope:** legal advice; this is project risk triage unless counsel is involved.
 

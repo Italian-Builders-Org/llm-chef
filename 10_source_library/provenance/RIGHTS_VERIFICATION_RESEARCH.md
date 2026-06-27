@@ -130,7 +130,7 @@ Operational rule:
 
 ## Public Release Label Criteria
 
-Use these criteria before assigning labels in `PUBLIC_RELEASE_POLICY_DRAFT.md`.
+Use these criteria before assigning labels in `PUBLIC_RELEASE_POLICY.md`.
 
 ### `public_domain_verified`
 

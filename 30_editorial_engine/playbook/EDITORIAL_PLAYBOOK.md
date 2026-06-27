@@ -1,4 +1,4 @@
-# Editorial Playbook Draft
+# Editorial Playbook
 
 Status: Draft. Not approved.
 

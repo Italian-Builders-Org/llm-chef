@@ -8,7 +8,7 @@ Use it for:
 - decisions
 - immediate todos
 - backlog items for later GitHub issues
-- contributor routing
+- contributor routing and contribution workflow
 - meeting notes
 - source attachment indexes
 - issue drafts before GitHub is connected
@@ -24,7 +24,7 @@ Do not put domain work here if it belongs in a specialized room.
 | `decisions/` | Decision register (ledger/index) and ADRs in `adr/`. |
 | `backlog/` | Deferred ideas that may become future GitHub issues. |
 | `todos/` | Immediate todos and future GitHub issue drafts. |
-| `routing/` | Human/agent task routing rules. |
+| `routing/` | Task routing rules and the contribution workflow (fork → PR → review). |
 | `source_attachments/` | Pointers or later approved copies of external context. |
 
 Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table in the same change.
