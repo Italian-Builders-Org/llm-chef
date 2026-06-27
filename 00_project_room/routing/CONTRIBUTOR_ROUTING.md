@@ -1,6 +1,6 @@
 # Contributor Routing
 
-Use this before starting work.
+Use this before starting work. For *how* work flows (fork/branch → PR → review, epics/issues, board setup), see `CONTRIBUTOR_WORKFLOW.md`.
 
 ## Route By Question
 

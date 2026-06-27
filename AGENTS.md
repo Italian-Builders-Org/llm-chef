@@ -59,6 +59,6 @@ Do not bury assumptions inside polished prose.
 
 ## Contributor Routing
 
-Use `00_project_room/routing/CONTRIBUTOR_ROUTING.md` to decide where a task belongs.
+Use `00_project_room/routing/CONTRIBUTOR_ROUTING.md` to decide where a task belongs, and `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for how work flows from issue to merged PR (fork/branch → PR → review, epics, board setup).
 
 If a task does not clearly belong anywhere, put it in `00_project_room/todos/ISSUE_DRAFTS.md` instead of creating a new folder.

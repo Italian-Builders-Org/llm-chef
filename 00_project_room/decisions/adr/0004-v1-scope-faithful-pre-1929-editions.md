@@ -21,4 +21,4 @@ V1 = **faithful digital editions (Level A)** — cleaned OCR, searchable, well-t
 - V1 candidate pool = the ~10 pre-1929 seed titles (Dioscoride 1546 … La frutta 1925).
 - V1 public content = only the subset of that pool marked safe for public release.
 - Lower rights and editorial risk; a shippable scope.
-- Rights labels (`10_source_library/provenance/PROVENANCE_POLICY_DRAFT.md`) gate full-text rendering vs metadata-only.
+- Rights labels (`10_source_library/provenance/PROVENANCE_POLICY.md`) gate full-text rendering vs metadata-only.
