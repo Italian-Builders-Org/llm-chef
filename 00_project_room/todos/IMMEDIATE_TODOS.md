@@ -12,8 +12,10 @@ Status: Draft local checklist before GitHub issues exist.
 - [x] Revise `VISION.md` based on initial interview answers.
 - [x] Confirm project documentation language: English.
 - [x] Create deferred backlog for post-V1 publishing/editorial ideas.
-- [x] Select V1 product option: faithful digital editions (Level A) of public-domain books — catalog + metadata search. See `00_project_room/decisions/DECISION_REGISTER.md`.
+- [x] Select V1 product option: faithful digital editions (Level A) from rights-verified candidate sources — catalog + metadata search. See `00_project_room/decisions/DECISION_REGISTER.md`.
 - [x] Defer team members, roles, and contribution workflow to GitHub issues/Projects.
+- [x] Create dependency-ordered GitHub issue candidates in `00_project_room/todos/ISSUE_DRAFTS.md`.
+- [x] Add rights-verification research memo and public-release checklist.
 
 ## Source And Data
 
@@ -21,14 +23,14 @@ Status: Draft local checklist before GitHub issues exist.
 - [ ] Decide whether raw source files stay outside git, use Git LFS, cloud storage, or a private data bucket.
 - [ ] Decide which PDFs/OCR text can be public in V1.
 - [ ] Verify book list against actual filenames/PDFs.
-- [ ] Mark each source with rights/provenance status.
+- [ ] Mark each source with rights/provenance status using `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md`.
 - [ ] Choose first 3-5 books for pilot extraction.
 
 ## Planning
 
 - [ ] Choose first 2-4 week milestone option.
 - [ ] Choose V1 tech stack for website/database/deployment.
-- [ ] Convert immediate todos into issue drafts.
+- [x] Convert immediate todos into issue drafts.
 - [ ] Convert selected backlog items into GitHub issues only after V1 scope is chosen.
 - [ ] Connect local repo to GitHub remote.
 - [ ] Create GitHub issues only after the first milestone is scoped.

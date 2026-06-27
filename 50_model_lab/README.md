@@ -14,7 +14,7 @@ This room owns:
 
 | Folder | Purpose | Status |
 |---|---|---|
-| `evals/` | Evaluation questions and results. | active |
+| `evals/` | Evaluation questions and results. | deferred_post_v1 |
 | `rag/` | Retrieval experiments. | create on demand |
 | `fine_tuning/` | Fine-tuning experiments. | create on demand |
 

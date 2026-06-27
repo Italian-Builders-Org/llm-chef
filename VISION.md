@@ -1,12 +1,12 @@
 # Vision Draft
 
-Status: Draft v0.2, not approved.
+Status: Draft v0.3. V1 scope accepted by ADR-0004; broader vision still draft.
 
-Last updated: 2026-06-27 after Interview 001 partial answers.
+Last updated: 2026-06-27 after ADR-0004 scope cleanup.
 
 ## What This Might Be
 
-Chef-LLM is currently aiming to become a live, open-source digital library for historical Italian culinary texts and recipes. The first product should make the collection navigable and useful through inventory, metadata, database-backed browsing/search, and a simple frontend.
+Chef-LLM is currently aiming to become a live, open-source digital library for historical Italian culinary texts and recipes. The first product should make the collection navigable and useful through inventory, metadata, faithful digital editions, and search.
 
 AI may become part of the product, but it is not required for the first 2-4 week milestone.
 
@@ -19,6 +19,7 @@ AI may become part of the product, but it is not required for the first 2-4 week
 - The project discussion includes historical Italian cuisine, recipe recovery, source preservation, editorial reconstruction, taxonomy, possible AI assistance, and possible publishing.
 - The team wants a clean local foundation before GitHub issues and project boards.
 - The first milestone target is a live website with basic functionality within 2-4 weeks.
+- V1 scope is accepted in ADR-0004: faithful Level A digital editions for rights-verified pre-1929 candidate sources, plus catalog and metadata search over the inventory.
 - First real users are internal team members, home cooks, the Italian Builders community, and public visitors who reach the web app.
 - Repository documentation should be in English.
 - The project intent is open source, with public data/PDF/model outputs only where rights allow.
@@ -32,6 +33,20 @@ AI may become part of the product, but it is not required for the first 2-4 week
 - Digital reader or source detail pages for verified public-use materials.
 - Source-grounded AI assistant over curated books and recipes.
 - Open-weight model experiments or fine-tuning later, only if a simpler retrieval baseline is insufficient.
+
+## Current V1
+
+V1 is not a generic AI recipe assistant and not an editorial modernization project.
+
+V1 is:
+
+- faithful digital editions, Level A only: source content unchanged
+- rights-verified pre-1929 candidate sources only for public full-text/PDF/OCR rendering
+- catalog and metadata search over the full known inventory
+- catalog-only treatment for sources whose rights are not verified
+- app/product code in a separate product repo
+
+Pre-1929 is a candidate filter, not proof of public-domain status. Every publicly rendered source still needs a `public_domain_verified` or equivalent release label.
 
 ## Strategic Tension
 
@@ -52,7 +67,7 @@ If those foundations are weak, model training and frontend polish will not save 
 
 The first valuable milestone should be a live digital-library MVP backed by a trustworthy source inventory and a small database. The website can start now, but it should expose what is actually known rather than pretending the full corpus is clean, legal, searchable, or AI-ready.
 
-This means the V1 product should likely be catalog/search-first, with AI as a stretch only after the source/data path works.
+This means V1 is catalog/search/faithful-edition first, with AI as a stretch only after the source/data path works.
 
 ## Explicitly Not V1
 
@@ -66,15 +81,14 @@ These are not rejected ideas. They are deferred to the backlog so they can becom
 
 ## Open Decisions
 
-- Which V1 product option should the team choose from `40_product_experience/research/V1_PRODUCT_OPTIONS.md`?
 - Which sources can be safely shown publicly in the first website?
 - What database/storage stack should V1 use?
 - What raw source material can legally and ethically be stored, shared, or published?
-- Does V1 include OCR/full-text search, or only metadata search?
+- Does V1 include full-text search for verified sources, or only cleaned digital edition pages plus metadata search?
 - Does V1 include an AI feature, or is AI explicitly a post-V1 stretch?
 - Who owns frontend, data, source verification, and deployment?
 - When should deferred backlog work be promoted into active scope?
 
 ## Vision Interview Gate
 
-Do not finalize this document until the team selects a V1 product option and confirms public-source policy.
+Do not finalize the broader vision until the team confirms public-source policy, source storage, and product-repo ownership.

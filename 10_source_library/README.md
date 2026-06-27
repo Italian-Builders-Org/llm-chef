@@ -24,11 +24,10 @@ This room does not own:
 |---|---|
 | `inventory/` | Book lists, source status, prioritization. |
 | `raw_sources/` | Placeholder for future raw source policy, not active storage yet. |
-| `provenance/` | Rights, source origin, and citation policy. |
+| `provenance/` | Rights, source origin, citation policy, and `RIGHTS_VERIFICATION_RESEARCH.md`. |
 
 Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table in the same change.
 
 ## Current Warning
 
 The seed book list contains assumed years. Treat it as inventory input, not verified bibliography.
-

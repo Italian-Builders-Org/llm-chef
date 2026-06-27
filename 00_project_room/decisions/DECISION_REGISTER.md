@@ -9,7 +9,7 @@ Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0
 - ADR-0001 — Use ADRs
 - ADR-0002 — Repository topology
 - ADR-0003 — Three-layer folder system
-- ADR-0004 — V1 scope: faithful pre-1929 digital editions
+- ADR-0004 — V1 scope: faithful digital editions from pre-1929 candidates
 - ADR-0005 — Entity slug standard & OKF scope
 
 | Date | Decision | Status | Rationale | Revisit trigger |
@@ -22,7 +22,7 @@ Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0
 | 2026-06-27 | Target a live digital-library website in 2-4 weeks. | Provisional | the project owner set the desired first milestone: inventory, database, frontend, maybe AI. | Team V1 scope decision. |
 | 2026-06-27 | Keep publishing and editorial modernization out of V1. | Provisional | the project owner said V1 should not create standardized book/recipe versions yet. | After the digital library is live and useful. |
 | 2026-06-27 | Prefer public/open-source outputs where legally safe. | Provisional | the project owner's intent is open source, bounded by copyright law. | After source rights review. |
-| 2026-06-27 | V1 = faithful digital editions (Level A) of **pre-1929 public-domain** books, plus catalog + metadata search (ADR-0004). | Decided | the project owner confirmed pre-1929 scope; faithful re-rendering, not reinterpretation. | If rights review leaves too few pre-1929 books. |
+| 2026-06-27 | V1 = faithful digital editions (Level A) from rights-verified pre-1929 candidate sources, plus catalog + metadata search (ADR-0004). | Decided | the project owner confirmed pre-1929 candidate scope; faithful re-rendering, not reinterpretation. Pre-1929 still requires rights verification. | If rights review leaves too few verified sources. |
 | 2026-06-27 | Repo topology: this repo is planning/info only; product code lives in a separate repo; a dedicated LLM repo only when it earns its own deploy boundary. | Decided | Split by deploy boundary, cadence, and audience, not by topic. | When LLM/RAG needs independent deployment. |
 | 2026-06-27 | Layer 2 rooms are a stable numbered skeleton; subfolders are created on demand per `FOLDER_MAP.md`. | Decided | Keep contributor signposts without empty-folder clutter. | If routing becomes unclear. |
 | 2026-06-27 | Entity IDs use stable kebab-case slugs (`author-year-shorttitle`). | Decided | Human-readable, URL- and OKF-ready, stable across title changes. | If slug collisions need a different scheme. |

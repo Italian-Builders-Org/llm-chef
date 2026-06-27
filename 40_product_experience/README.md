@@ -24,6 +24,6 @@ Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table 
 
 ## Current Boundary
 
-Frontend work is now a likely part of V1, but only after the team chooses a product option.
+Frontend work is part of V1, but product code lives in the separate product repo. This repo should hold specs, UX decisions, and data/API contracts only.
 
 The V1 product should be a digital library first. Do not let the frontend imply that source rights, OCR quality, recipe extraction, or AI answers are more reliable than they actually are.
