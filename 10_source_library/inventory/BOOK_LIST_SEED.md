@@ -4,6 +4,10 @@ Status: Seed inventory from `/Users/adambrecht/Downloads/cookbook_book_list_year
 
 Do not treat years, editions, or titles as verified until checked against actual source files.
 
+Pre-1929 rows are V1 candidates only. They are not automatically public-domain verified.
+
+Adam reported on 2026-06-27 that every item in this original seed list was scanned from a physical copy owned by him. This should be confirmed per file when filenames, editions, and checksums are added.
+
 | # | Book | Assumed year |
 |---:|---|---:|
 | 1 | Dioscoride Anazarbeo - Della materia medicinale | 1546/1547 |
@@ -42,11 +46,23 @@ Do not treat years, editions, or titles as verified until checked against actual
 - file location
 - language
 - author
+- author death year
 - edition
+- edition year
 - publisher
 - page count
 - scan/OCR status
 - rights status
+- release label
+- source provider
+- physical copy owner
+- scanned by
+- scan confirmation date
+- provider terms URL
+- EU/Italy status
+- US status
+- cultural heritage constraints
+- public release reviewer
+- public release review date
 - priority
 - notes
-

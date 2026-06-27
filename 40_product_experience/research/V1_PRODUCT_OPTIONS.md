@@ -1,10 +1,23 @@
-# V1 Product Options
+# V1 Product Options - Decision Background
 
-Status: Team decision draft.
+Status: Superseded by ADR-0004. Kept as decision background.
 
 Goal window: 2-4 weeks.
 
-Target: live website with basic digital-library functionality, inventory, database, frontend, and optional AI only if feasible.
+Target considered: live website with basic digital-library functionality, inventory, database, frontend, and optional AI only if feasible.
+
+## Decision Outcome
+
+The team selected a narrowed version of Option B, recorded in `00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md`.
+
+Current V1:
+
+- faithful Level A digital editions
+- rights-verified pre-1929 candidate sources only for public OCR/PDF/full-text rendering
+- catalog and metadata search over the full inventory
+- no Level B/C reinterpretation
+- no fine-tuning
+- no publishing or fundraising scope
 
 ## Hard Reality
 
@@ -56,7 +69,7 @@ A database-backed digital library with catalog browsing plus search over verifie
 - Everything in Option A.
 - Database for books, authors, periods, source types, rights status, and file references.
 - Search over metadata.
-- Optional full-text search over 3-5 public-domain or rights-cleared pilot sources.
+- Optional full-text search over 3-5 `public_domain_verified` or explicitly rights-cleared pilot sources.
 - Book detail pages with available OCR/source sections if legally safe.
 - Basic admin/import script for adding books from a structured CSV/JSON file.
 
@@ -182,21 +195,13 @@ Out of scope:
 - Sophisticated account systems.
 - Payments, classes, or fundraising flows.
 
-## Team Decision Needed
+## Remaining Implementation Decisions
 
-Pick one:
+Answer before engineering starts:
 
-1. Option A: fastest credible catalog.
-2. Option B: recommended searchable digital library MVP.
-3. Option C: AI demo, higher risk.
-4. Option D: community archive/contribution portal.
-
-Then answer:
-
-- Which 3-5 sources are safe for pilot full-text/OCR?
+- Which pre-1929 candidate sources can be marked `public_domain_verified`?
 - Who owns frontend?
 - Who owns data/import?
 - Who owns source rights verification?
 - Where will the site deploy?
 - What database/storage stack should we use?
-

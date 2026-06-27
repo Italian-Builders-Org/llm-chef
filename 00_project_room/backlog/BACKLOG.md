@@ -90,3 +90,21 @@ These items are not V1. They exist so the team can remember them without letting
 
 **Future GitHub issue candidate:** yes, after V1 traction.
 
+## B005: Ingredient Substitution And Modern Availability Research
+
+**Status:** `deferred_post_v1`
+
+**Why defer:** This is post-V1 editorial research (obsolete/foraged/hard-to-source ingredients and modern substitutions). It depends on faithful editions existing first and on the editorial modernization policy (B002). It is not a V1 issue. Demoted here from issue draft IB-035 during the issue-review pass.
+
+**Possible future outputs:**
+
+- research memo separating source facts, modern substitutions, and interpretation
+- substitution guidance tied to Level B/C presentation
+
+**Do not start before:**
+
+- V1 faithful editions ship
+- editorial modernization policy (B002) is scoped
+
+**Future GitHub issue candidate:** yes, alongside B002 editorial work.
+

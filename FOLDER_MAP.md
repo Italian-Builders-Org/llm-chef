@@ -23,8 +23,8 @@ Chef-LLM/
 │  ├── 20_data_foundation/              taxonomy · schema  (→ books.json)
 │  ├── 30_editorial_engine/             editorial playbook (Level A/B/C)
 │  ├── 40_product_experience/           product options · design
-│  ├── 50_model_lab/                    rag · evals                [dormant]
-│  ├── 60_publishing_and_partnerships/  publishing · partners      [dormant]
+│  ├── 50_model_lab/                    rag · evals                [deferred_post_v1]
+│  ├── 60_publishing_and_partnerships/  publishing · partners      [deferred_post_v1]
 │  └── 90_archive/                      superseded material
 │
 └─ LAYER 3 · ARTIFACTS  ── "the work itself"
@@ -109,6 +109,13 @@ Subfolders are created on demand, by the contributor (or their agent) doing the 
 6. **Link up, don't restate.** Files link to the room README for context; they never re-document repo navigation.
 
 Each room README's Local Map table is the registry of that room's subfolders. Rows marked `create on demand` are intended destinations that do not yet exist as folders.
+
+## Room/Subfolder Status Values
+
+- `active`: current or V1-relevant work.
+- `deferred_post_v1`: preserved for later; not part of V1 execution.
+- `create on demand`: valid destination, but folder should not exist until a real file exists.
+- `dormant`: no planned work; keep only if needed as a signpost.
 
 ## Entity ID & Slug Standard
 

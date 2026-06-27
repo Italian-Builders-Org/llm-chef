@@ -4,6 +4,8 @@ Status: Draft, not legal advice.
 
 Purpose: clarify what can be public in an open-source historical cookbook project.
 
+Use `RIGHTS_VERIFICATION_RESEARCH.md` as the working checklist for assigning release labels.
+
 ## Baseline Legal Reality
 
 The team should assume that "old" does not automatically mean "safe to publish."
@@ -19,12 +21,14 @@ Useful reference points:
 
 Use these labels on every source before public release:
 
-- `public_domain_verified`: Safe enough to publish source scans/OCR based on documented review.
+- `public_domain_verified`: Safe enough to publish source scans/OCR based on documented work-level, edition-level, source-file, and jurisdiction review.
 - `public_domain_likely`: Probably safe, but needs confirmation before publishing files or OCR.
 - `metadata_only`: Metadata can be public, but PDF/OCR should not be public yet.
 - `permission_needed`: Rights holder or license needs confirmation.
 - `private_research_only`: Do not publish files, OCR, or large excerpts.
 - `do_not_use`: Exclude from project use.
+
+Default to `metadata_only` until the source has evidence for the underlying work, the edition, the scan/PDF provider terms, and EU/Italy + US reuse status.
 
 ## What Can Usually Be Public First
 
@@ -50,13 +54,15 @@ Higher-risk:
 
 ## V1 Rule
 
-For the first live website, publish metadata for all known books, but publish PDFs/OCR only for sources marked `public_domain_verified`.
+For the first live website, publish metadata for all known books, but publish PDFs/OCR/full text only for sources marked `public_domain_verified`.
+
+Pre-1929 publication is a candidate filter for V1, not a release label. It does not override edition, translation, image, annotation, scan-owner, source-provider, cultural-heritage, or jurisdiction questions.
 
 If a source is uncertain, show it as catalog metadata with rights status. Do not expose the file.
 
 ## Open Questions For Adam/Team
 
-- Which PDFs came from public-domain sources versus private scans?
+- Confirm per-file that the original seed-list PDFs were scanned from Adam-owned physical copies.
 - Which books are modern editions of older public-domain works?
 - Are there translations, introductions, photographs, or annotations that have separate rights?
 - Will the site host files directly, or link to trusted external public-domain hosts?

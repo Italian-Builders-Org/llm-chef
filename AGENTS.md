@@ -30,7 +30,7 @@ Keep docs honest at the moment work changes them, not later.
   - `FOLDER_MAP.md` (if structure or naming conventions change)
   - a new ADR plus the Decision Register (if a decision changes — see `00_project_room/decisions/`)
   - the relevant area README or seed doc (if its content is now stale)
-- Living docs carry `Status:` and `Last updated:` lines. Update the stamp when you touch the doc's subject.
+- Canonical living docs should carry `Status:` and, where they represent current project state rather than static guidance, `Last updated:`. Update the stamp when you change the doc's subject.
 - If you notice a stale doc you are not changing, flag it in `00_project_room/todos/IMMEDIATE_TODOS.md` instead of leaving it silently wrong.
 - A deleted or moved artifact must have its references updated in the same change.
 
@@ -62,4 +62,3 @@ Do not bury assumptions inside polished prose.
 Use `00_project_room/routing/CONTRIBUTOR_ROUTING.md` to decide where a task belongs.
 
 If a task does not clearly belong anywhere, put it in `00_project_room/todos/ISSUE_DRAFTS.md` instead of creating a new folder.
-
