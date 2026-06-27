@@ -10,10 +10,16 @@ Chef-LLM is currently aiming to become a live, open-source digital library for h
 
 AI may become part of the product, but it is not required for the first 2-4 week milestone.
 
+## Current Milestone (V1)
+
+The vision is reached in milestones, each scoped by an ADR (V1 → V2 → …). This document stays high-level; ADRs own the scoped detail.
+
+The current milestone is **V1**, owned by [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md): faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog + metadata search — not a generic AI assistant, not editorial modernization. See the ADR for authoritative scope and boundaries.
+
 ## Confirmed Facts
 
 - The local workspace is `/Users/owner/Chef-llm`.
-- A GitHub repo appears to exist under `Italian-Builders-Org / llm-chef`, but this local folder was not connected to it at setup time.
+- The project's repos live under the `Italian-Builders-Org` GitHub org; `llm-chef` is the planning/coordination repo.
 - There is an existing collection of scanned cookbook PDFs, described in context as roughly 20GB and about 25-30 books.
 - The provided book list spans assumed years from the 1500s through the late 1900s, with many books from 1800-1990.
 - The project discussion includes historical Italian cuisine, recipe recovery, source preservation, editorial reconstruction, taxonomy, possible AI assistance, and possible publishing.
@@ -25,7 +31,7 @@ AI may become part of the product, but it is not required for the first 2-4 week
 - The project intent is open source, with public data/PDF/model outputs only where rights allow.
 - Publishing and editorial recipe modernization are not first-milestone goals.
 
-## Candidate Product Directions, Not Decisions
+## Possible Future Directions (Post-V1)
 
 - Searchable historical cookbook library.
 - Master timeline of cookbooks, authors, periods, regions, and culinary movements.
@@ -33,20 +39,6 @@ AI may become part of the product, but it is not required for the first 2-4 week
 - Digital reader or source detail pages for verified public-use materials.
 - Source-grounded AI assistant over curated books and recipes.
 - Open-weight model experiments or fine-tuning later, only if a simpler retrieval baseline is insufficient.
-
-## Current V1
-
-V1 is not a generic AI recipe assistant and not an editorial modernization project.
-
-V1 is:
-
-- faithful digital editions, Level A only: source content unchanged
-- rights-verified pre-1929 candidate sources only for public full-text/PDF/OCR rendering
-- catalog and metadata search over the full known inventory
-- catalog-only treatment for sources whose rights are not verified
-- app/product code in a separate product repo
-
-Pre-1929 is a candidate filter, not proof of public-domain status. Every publicly rendered source still needs a `public_domain_verified` or equivalent release label.
 
 ## Strategic Tension
 
@@ -81,14 +73,12 @@ These are not rejected ideas. They are deferred to the backlog so they can becom
 
 ## Open Decisions
 
-- Which sources can be safely shown publicly in the first website?
-- What database/storage stack should V1 use?
-- What raw source material can legally and ethically be stored, shared, or published?
+- Which sources can be safely shown publicly in the first website? (rights — IB-010)
+- What database/hosting stack should V1 use? (IB-005)
 - Does V1 include full-text search for verified sources, or only cleaned digital edition pages plus metadata search?
 - Does V1 include an AI feature, or is AI explicitly a post-V1 stretch?
-- Who owns frontend, data, source verification, and deployment?
 - When should deferred backlog work be promoted into active scope?
 
 ## Vision Interview Gate
 
-Do not finalize the broader vision until the team confirms public-source policy, source storage, and product-repo ownership.
+Do not finalize the broader vision until the team confirms public-source policy and product-repo ownership.

@@ -17,15 +17,15 @@ Do not put domain work here if it belongs in a specialized room.
 
 ## Local Map
 
-| Folder | Purpose |
-|---|---|
-| `context/` | Digests, attachment indexes, source notes. |
-| `interviews/` | Questions and answers used to shape the project. |
-| `decisions/` | Decision register (ledger/index) and ADRs in `adr/`. |
-| `backlog/` | Deferred ideas that may become future GitHub issues. |
-| `todos/` | Immediate todos and future GitHub issue drafts. |
-| `routing/` | Task routing rules and the contribution workflow (fork → PR → review). |
-| `source_attachments/` | Pointers or later approved copies of external context. |
+| Folder | Purpose | Status |
+|---|---|---|
+| `context/` | Digests, attachment indexes, source notes. | active |
+| `interviews/` | Questions and answers used to shape the project. | active |
+| `decisions/` | Decision register (ledger/index) and ADRs in `adr/`. | active |
+| `backlog/` | Deferred ideas that may become future GitHub issues. | active |
+| `todos/` | Immediate todos and future GitHub issue drafts. | active |
+| `routing/` | Task routing rules and the contribution workflow (fork → PR → review). | active |
+| `source_attachments/` | Pointers or later approved copies of external context. | dormant |
 
 Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table in the same change.
 

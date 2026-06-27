@@ -20,11 +20,11 @@ This room does not own:
 
 ## Local Map
 
-| Folder | Purpose |
-|---|---|
-| `inventory/` | Book lists, source status, prioritization. |
-| `raw_sources/` | Placeholder for future raw source policy, not active storage yet. |
-| `provenance/` | Rights, source origin, citation policy, and `RIGHTS_VERIFICATION_RESEARCH.md`. |
+| Folder | Purpose | Status |
+|---|---|---|
+| `inventory/` | Book lists, source status, prioritization. | active |
+| `provenance/` | Rights, source origin, citation policy, and `RIGHTS_VERIFICATION_RESEARCH.md`. | active |
+| `raw_sources/` | Placeholder; raw masters live off-git in team Drive (see DECISION_REGISTER). | dormant |
 
 Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table in the same change.
 

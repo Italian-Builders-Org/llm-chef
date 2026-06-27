@@ -2,6 +2,8 @@
 
 Status: Draft local checklist before GitHub issues exist.
 
+Last updated: 2026-06-27.
+
 ## Foundation
 
 - [x] Create local 3-layer folder system.
