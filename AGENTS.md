@@ -30,7 +30,7 @@ Keep docs honest at the moment work changes them, not later.
   - `FOLDER_MAP.md` (if structure or naming conventions change)
   - a new ADR plus the Decision Register (if a decision changes — see `00_project_room/decisions/`)
   - the relevant area README or seed doc (if its content is now stale)
-- Canonical living docs should carry `Status:` and, where they represent current project state rather than static guidance, `Last updated:`. Update the stamp when you change the doc's subject.
+- **State-tracking docs** (`VISION.md`, `00_project_room/decisions/DECISION_REGISTER.md`, `00_project_room/todos/IMMEDIATE_TODOS.md`, `00_project_room/todos/ISSUE_DRAFTS.md`, `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md`) carry `Status:` and `Last updated:`; update the stamp when you change the doc's subject. **Static guidance** (`README.md`, `AGENTS.md`, `CLAUDE.md`, `FOLDER_MAP.md`, room READMEs, policy docs) does not need stamps.
 - If you notice a stale doc you are not changing, flag it in `00_project_room/todos/IMMEDIATE_TODOS.md` instead of leaving it silently wrong.
 - A deleted or moved artifact must have its references updated in the same change.
 

@@ -15,6 +15,7 @@ Backlog ideas live in `00_project_room/backlog/BACKLOG.md`. Do not convert every
 - Product app code belongs in the future product repo, not this planning repo.
 - Public PDF/OCR/full-text work is blocked until source rights are labeled (IB-010).
 - IDs are frozen. When splitting or adding work, use a new ID; do not renumber existing tickets.
+- This file is **pre-launch staging**. Once GitHub issues exist (Phase 0), it is frozen as a snapshot, superseded by the issues/board, and moved to `90_archive/`. Do not maintain both.
 
 ## How To Run It
 

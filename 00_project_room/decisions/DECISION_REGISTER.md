@@ -2,6 +2,8 @@
 
 Status: Active.
 
+Last updated: 2026-06-27.
+
 ## Architecture Decision Records
 
 Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0001-use-adrs.md`](adr/0001-use-adrs.md)). This table is the lightweight ledger and index; rows backed by an ADR name it in the Decision cell.

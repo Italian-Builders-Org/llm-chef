@@ -24,3 +24,12 @@ This repo is currently in setup mode. The priority is to make the project legibl
 This repo is the planning and information repo. It owns decisions, source inventory, provenance policy, data contracts, issue candidates, and coordination docs.
 
 Do not add product application code here. The live website belongs in a separate product repo, per `00_project_room/decisions/adr/0002-repository-topology.md`.
+
+## Start Here (Contributors)
+
+This is the **planning & coordination repo** — no product or app code lives here (see Repo Topology above).
+
+1. Read the docs in the order above to understand the project and how we work.
+2. **Pick up work from GitHub Issues / the Project board**, not from this repo. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for the fork/branch → PR → review flow.
+3. **Code** goes in the separate **product repo** (being set up — IB-004). Until it exists, the most useful non-code help is source rights/metadata research and the data contract.
+4. Before the GitHub board exists, `00_project_room/todos/ISSUE_DRAFTS.md` is the staging list of planned issues; it is superseded by the board once issues are created.
