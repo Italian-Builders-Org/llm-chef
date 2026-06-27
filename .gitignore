@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.env.*
+node_modules/
+dist/
+build/
+.cache/
+
+# Large or rights-sensitive source material should be added only after
+# provenance, copyright, and storage policy are decided.
+*.pdf
+*.tif
+*.tiff
+*.heic
+*.mov
+*.mp4
+**/raw_sources/*
+!**/raw_sources/README.md
+
