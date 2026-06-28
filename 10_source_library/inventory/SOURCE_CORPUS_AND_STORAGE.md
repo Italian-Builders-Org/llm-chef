@@ -36,8 +36,13 @@ as the working default, not a per-file proven fact.
 | 4 | Repo `10_source_library/raw_sources/` | repo | empty | git | Intentionally empty placeholder — raw masters stay off-git |
 
 Scan creator and physical-copy owner for all located seed sources = the project
-owner (see Provenance Note). A local working copy also exists on a contributor
-machine; its filesystem path is withheld per the note above.
+owner (see Provenance Note), **except** Dioscoride (external archive.org copy, not
+owner-scanned). A local working copy also exists on a contributor machine; its
+filesystem path is withheld per the note above.
+
+A **second local scan batch** ("LIBRI SCANSIONATI 2", 2026-06-28) holds three more
+sources (Cervio *Il Trinciante* 1593, Aloi *L'olivo e l'olio* 1898, *Le ricette della
+Rocca* 1988); same withheld-path policy applies.
 
 ## Storage Model for V1
 
@@ -54,10 +59,12 @@ machine; its filesystem path is withheld per the note above.
 
 ## Gaps & Risks
 
-- `Risk:` Three seed rows have **no located scan** in the observed corpus —
-  Dioscoride (1546), L'olivo e l'olio (Aloi, 1920s), and Dictionnaire de l'Académie
-  des Gastronomes (1942). Their digital location is unknown; they may exist only as
-  physical copies or not at all. Resolve in IB-007/IB-009.
+- `Fact (updated 2026-06-28, IB-008):` Of the three originally-unlocated rows, two are
+  now resolved — **Aloi** (*L'olivo e l'olio*, 4ª ed., Hoepli 1898) arrived in a second
+  scan batch ("LIBRI SCANSIONATI 2"), and **Dioscoride** is resolved via an external
+  digitisation (archive.org, 1547 Giunti Florence edition). Only **Dictionnaire de
+  l'Académie des Gastronomes (1962)** still has no copy. The second batch also added
+  two new sources: Cervio's *Il Trinciante* (1593) and *Le ricette della Rocca* (1988).
 - `Risk:` The Artusi 1891 "immagini" set is an **image-only folder with no PDF**.
   Page-image rights/handling differ from a single PDF.
 - `Risk:` The team Drive share link covers the **entire ~17 GB corpus**, which
@@ -69,8 +76,14 @@ machine; its filesystem path is withheld per the note above.
 - `Decision needed:` Define who specifically holds the Drive link and how access is
   granted/revoked, so the access method is auditable for IB-038 (licensing) and
   IB-010 (public-release labels).
-- `Fact:` Content, edition, public-domain status, and OCR quality of every source
-  remain **unverified** — this inventory confirms location and access only.
+- `Fact:` **Bibliographic metadata** (title/author/year/edition/publisher) is now
+  verified per book in [`BIBLIOGRAPHIC_VERIFICATION.md`](BIBLIOGRAPHIC_VERIFICATION.md)
+  (IB-008), including against the scanned title pages where present. **Public-domain
+  status and OCR quality remain unverified** — see
+  [`../provenance/RIGHTS_STATUS_MATRIX.md`](../provenance/RIGHTS_STATUS_MATRIX.md) for
+  the rights gap map. Note two scans are modern reprints (Manuale = Forni 1983,
+  Trinciante = Forni 1980) and one source is external (Dioscoride, archive.org), which
+  changes the "all owner-scanned" assumption for those rows.
 
 ## Out of Scope
 

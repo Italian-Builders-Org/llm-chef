@@ -30,4 +30,9 @@ Add subfolders per `FOLDER_MAP.md` (Subfolder Creation Rule); update this table 
 
 ## Current Warning
 
-The seed book list contains assumed years. Treat it as inventory input, not verified bibliography.
+The seed book list (`inventory/BOOK_LIST_SEED.md`) carries the *working* titles/years.
+Bibliographic metadata is verified per book in `inventory/BIBLIOGRAPHIC_VERIFICATION.md`
+(IB-008), including against scanned title pages where available; rights/public-domain
+lean is mapped in `provenance/RIGHTS_STATUS_MATRIX.md` (IB-009/IB-010 seed). **Rights
+are not cleared** — no source is publicly releasable until a reviewer signs off per
+`provenance/PUBLIC_RELEASE_POLICY.md`.

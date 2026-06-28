@@ -5,6 +5,8 @@ Last updated: 2026-06-27
 
 Purpose: explain why "pre-1929" is only a candidate filter and define the checks required before publishing PDFs, OCR, full text, page images, or model outputs.
 
+The per-book first pass that begins applying this checklist (US/EU public-domain lean, scan-artifact, gaps, reviewer sign-off) is [`RIGHTS_STATUS_MATRIX.md`](RIGHTS_STATUS_MATRIX.md), seeded from the bibliographic verification in [`../inventory/BIBLIOGRAPHIC_VERIFICATION.md`](../inventory/BIBLIOGRAPHIC_VERIFICATION.md) (IB-008).
+
 ## Bottom Line
 
 For V1, default every source to `metadata_only` until it passes a documented rights review.

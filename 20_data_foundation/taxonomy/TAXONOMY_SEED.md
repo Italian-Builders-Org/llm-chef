@@ -90,5 +90,4 @@ Precision level:
 - Should taxonomy terms be English, Italian, or bilingual?
 - Should regions use historical geography, modern Italian regions, or both?
 - How should duplicate recipes across editions be linked?
-- What is the minimum viable schema for pilot extraction?
-
+- What is the minimum viable schema for the V1 catalog now and future recipe-level extraction later?
