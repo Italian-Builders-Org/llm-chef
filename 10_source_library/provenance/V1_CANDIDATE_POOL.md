@@ -15,6 +15,11 @@ treatment in V1, on the basis of **publication date alone**. Built from
 > domain verification and release labels happen in **IB-010**, with reviewer sign-off
 > per [`PUBLIC_RELEASE_POLICY.md`](PUBLIC_RELEASE_POLICY.md). Pilot selection is **IB-011**.
 
+**Update 2026-06-28:** IB-010 labeled all candidates and the owner signed off **6** of
+these to `public_domain_verified`; IB-011 selected them as the V1 pilot (Artusi 1891 =
+build-first prototype). See [`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md) and
+[`V1_PILOT_SELECTION.md`](V1_PILOT_SELECTION.md).
+
 ## Filter used
 
 - **Rule:** include a source only if the underlying work was **published before 1929**

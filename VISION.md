@@ -24,7 +24,7 @@ The defensible value is the combination of: rare or underused sources, curated p
 
 The vision is reached in milestones, each scoped by its own ADR (V1, then V2, and so on). This document stays high-level and aspirational; ADRs own committed scope.
 
-- **Current milestone, V1:** see [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md). Faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog and metadata search. This is book-level only: a catalog of books and faithful page readers, **not** recipe extraction.
+- **Current milestone, V1:** see [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md). Faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog and metadata search. This is book-level only: a catalog of books and a faithful **Level A reader — cleaned, well-typeset transcription of the source text (not page facsimiles, not reinterpretation)** — **not** recipe extraction.
 - **Next milestone, V2 (anticipated):** the **Recipe Engine** below, extracting and classifying individual recipes into the structured database. It needs its own ADR and depends on V1's OCR contract and rights work. It is what unlocks recipe search, the Collana, dish maps, and trending.
 - Everything below (the Engine and the End-State Experiences) is **aspirational**: where we are heading, not committed scope. Each becomes its own ADR when promoted.
 
