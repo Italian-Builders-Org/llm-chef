@@ -101,6 +101,10 @@ input). Artifact: `orig` original printing scanned · `reprint` modern reprint s
 
 ## What this means for V1
 
+The pre-1929 subset is formalised as the candidate pool in
+[`V1_CANDIDATE_POOL.md`](V1_CANDIDATE_POOL.md) (IB-009) — candidate-only, not cleared.
+
+
 - **Track-1 pilot pool:** the Group-A records — anchored by Artusi 1891, the
   Mattioli/Dioscoride 1547, and Cervio's *Trinciante* 1593 — are the strongest review
   candidates. They are **not public-release approvals** until a reviewer signs off.
