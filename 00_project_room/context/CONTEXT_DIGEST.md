@@ -4,7 +4,7 @@ Status: Working digest from user-provided context on 2026-06-27.
 
 ## Facts From Current Context
 
-- the project owner has access to a personal/family-adjacent collection of cookbook PDFs and books.
+- The project owner has access to a private collection of cookbook PDFs and books.
 - The project discussion mentions about 20GB of scanned PDFs and about 25-30 books.
 - Some sources may be rare, old, regional, handwritten, or not well represented in model training data.
 - Several collaborators are interested in the project and discussed using Slack, GitHub issues, PRs, and GitHub Projects.

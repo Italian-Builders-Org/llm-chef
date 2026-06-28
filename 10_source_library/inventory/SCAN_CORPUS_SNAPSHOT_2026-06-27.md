@@ -6,7 +6,7 @@ Update: On 2026-06-28, the local folders/files listed in "Local Rename Cleanup" 
 
 Local root inspected:
 
-`/Users/owner/Downloads/SCANSIONE LIBRI/Libri scansionati`
+(local path withheld)
 
 ## Summary
 

@@ -20,7 +20,7 @@ If any layer is unclear, the public website should show metadata only and link t
 
 ## Known Source-Origin Fact
 
-the project owner reported on 2026-06-27 that every item in the original seed list was scanned from a physical copy owned by him.
+The project owner reported on 2026-06-27 that every item in the original seed list was scanned from a physical copy they own.
 
 Implication: for those sources, the scan/source-provider layer is simpler than if the PDFs came from a library, paid database, Internet Archive, Google Books, or another external host.
 

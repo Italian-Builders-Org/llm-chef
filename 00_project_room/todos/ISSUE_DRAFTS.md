@@ -49,14 +49,14 @@ Each epic is an ownable deliverable. Encode as a milestone or tracking issue (se
 | G | Ship V1 | core | IB-029, 030 |
 | H | Post-V1 stretch | community + specialist | IB-031, 032, 033, 034, 036 |
 
-## Phase 0 — Bootstrap (owner: the project owner, off-tracker)
+## Phase 0 — Bootstrap (owner: project owner, off-tracker)
 
 These create the tracker itself, so they are not GitHub issues. Do them once, by hand. IDs are kept for dependency references only.
 
 | ID | Task | Owner |
 |---|---|---|
-| IB-001 | Connect repo remote (origin → llm-chef) | the project owner |
-| IB-002 | Set up GitHub labels, issue templates, and Project board (was IB-002 + IB-003) | the project owner |
+| IB-001 | Connect repo remote (origin → llm-chef) | project owner |
+| IB-002 | Set up GitHub labels, issue templates, and Project board (was IB-002 + IB-003) | project owner |
 
 ## Dependency Order
 
@@ -166,7 +166,7 @@ Not yet broken into issues. The **Recipe Engine** — extract individual recipes
 **Labels:** `source-library`, `storage`, `rights`, `blocking`
 **Dependencies:** none — start immediately
 **Output:** inventory of where PDFs/scans currently live and storage options for V1.
-**Success check:** each known source location is listed with owner, size, access method, physical-copy owner, scan creator if known, and whether it can be shared with contributors. Confirm the project owner's note that original seed-list PDFs were scanned from his own physical copies.
+**Success check:** each known source location is listed with owner, size, access method, physical-copy owner, scan creator if known, and whether it can be shared with contributors. Confirm the note that original seed-list PDFs were scanned from the project owner's own physical copies.
 **Storage decision:** raw masters live in a restricted team Google Drive (off-git); rights-cleared pilot assets get hosted at build time (IB-014/IB-027); Slack is for pointers, not storage.
 **Out of scope:** uploading files to public storage.
 

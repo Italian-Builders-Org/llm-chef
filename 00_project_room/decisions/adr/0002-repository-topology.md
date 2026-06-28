@@ -2,7 +2,7 @@
 
 - Status: Superseded by ADR-0006
 - Date: 2026-06-27
-- Deciders: the project owner
+- Deciders: project owner
 
 > **Superseded by [ADR-0006](0006-single-repository-topology.md).** The team uses a single repo (`llm-chef`) with the website in `/website`, not separate repos. The multi-repo reasoning below is kept for history.
 

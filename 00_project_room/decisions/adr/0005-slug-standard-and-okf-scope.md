@@ -2,7 +2,7 @@
 
 - Status: Accepted
 - Date: 2026-06-27
-- Deciders: the project owner
+- Deciders: project owner
 
 ## Context
 

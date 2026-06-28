@@ -10,7 +10,7 @@ Last updated: 2026-06-28.
 - [x] Create root agent/human orientation docs.
 - [x] Create initial vision draft with open questions.
 - [x] Create contributor routing rules.
-- [x] the project owner partially answers `00_project_room/interviews/INTERVIEW_001_FOUNDATION.md`.
+- [x] The project owner partially answers `00_project_room/interviews/INTERVIEW_001_FOUNDATION.md`.
 - [x] Revise `VISION.md` based on initial interview answers.
 - [x] Confirm project documentation language: English.
 - [x] Create deferred backlog for post-V1 publishing/editorial ideas.

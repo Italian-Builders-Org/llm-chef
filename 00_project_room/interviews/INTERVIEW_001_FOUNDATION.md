@@ -40,7 +40,7 @@ Purpose: clarify the first milestone before GitHub issues, product planning, or 
 
 ### 1-2. First Artifact And 2-4 Week Milestone
 
-the project owner wants the first 2-4 week milestone to be a live website with basic functionality:
+The project owner wants the first 2-4 week milestone to be a live website with basic functionality:
 
 - inventory
 - database
@@ -49,7 +49,7 @@ the project owner wants the first 2-4 week milestone to be a live website with b
 
 The project should be more like a digital library first. It should not yet focus on publishing, editorial modernization, standardized measurements, or creating new versions of books.
 
-the project owner requested several concrete V1 product options so the team can choose what is feasible and worth building.
+The project owner requested several concrete V1 product options so the team can choose what is feasible and worth building.
 
 ### 3. First Real Users
 
@@ -62,7 +62,7 @@ First users:
 
 ### 4-5. Open Source And Public Use
 
-the project owner's intent is open source. Data, PDFs, model outputs, model weights, and code should be public where legally safe.
+The project owner's intent is open source. Data, PDFs, model outputs, model weights, and code should be public where legally safe.
 
 More specificity is needed around copyright, public domain status, PDF hosting, OCR text, model outputs, and model weights.
 

@@ -60,9 +60,9 @@ Pre-1929 publication is a candidate filter for V1, not a release label. It does 
 
 If a source is uncertain, show it as catalog metadata with rights status. Do not expose the file.
 
-## Open Questions For the project owner/Team
+## Open Questions For Owner/Team
 
-- Confirm per-file that the original seed-list PDFs were scanned from the project owner-owned physical copies.
+- Confirm per-file that the original seed-list PDFs were scanned from physical copies owned by the project owner.
 - Which books are modern editions of older public-domain works?
 - Are there translations, introductions, photographs, or annotations that have separate rights?
 - Will the site host files directly, or link to trusted external public-domain hosts?

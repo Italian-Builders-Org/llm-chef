@@ -49,7 +49,7 @@ When an assumption is necessary, write it explicitly:
 
 - `Fact:` directly supported by a source in this repo or by the user.
 - `Assumption:` plausible but not confirmed.
-- `Decision needed:` requires the project owner/team confirmation.
+- `Decision needed:` requires owner/team confirmation.
 - `Risk:` could invalidate work if ignored.
 
 Do not bury assumptions inside polished prose.

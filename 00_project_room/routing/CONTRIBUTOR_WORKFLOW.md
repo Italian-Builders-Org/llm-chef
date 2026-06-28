@@ -55,7 +55,7 @@ One logical change per PR. Maintainers may have Write access to merge and manage
 
 ## Review and merge
 
-- the project owner reviews (with Codex/Claude as needed). Merges if it meets the success check; otherwise requests changes.
+- The project owner reviews (with Codex/Claude as needed). Merges if it meets the success check; otherwise requests changes.
 - `main` is protected: **a reviewed PR is required to merge**; no one pushes directly, including maintainers.
 - After merge, `Closes #NN` auto-closes the issue and the board moves it to Done.
 
@@ -65,7 +65,7 @@ One logical change per PR. Maintainers may have Write access to merge and manage
 - Product/app code goes in `/website`, not the numbered planning rooms.
 - Update affected docs in the same change (see `AGENTS.md` Update Protocol).
 
-## Board setup recipe (Phase 0 — the project owner, one-time)
+## Board setup recipe (Phase 0 — project owner, one-time)
 
 1. **Connect** is done: `origin` points at `Italian-Builders-Org/llm-chef`.
 2. **Branch protection on `main`:** require a pull request before merging; require 1 approval; optionally require status checks. This is what enforces review.
@@ -85,4 +85,4 @@ One logical change per PR. Maintainers may have Write access to merge and manage
 6. **Access:** everyone contributes via forks; grant **Write** to 1–2 maintainers for merging and issue/label management.
 7. **CODEOWNERS + path-scoped CI:** route `/website` PRs vs. planning PRs to the right reviewers; build/deploy `/website` only on `/website/**` changes.
 
-If org-level Project creation is restricted, ask an org owner (collaborator) — see the access asks in the project proposal.
+If org-level Project creation is restricted, ask an org owner — see the access asks in the project proposal.

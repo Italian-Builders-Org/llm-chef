@@ -2,12 +2,12 @@
 
 - Status: Accepted
 - Date: 2026-06-28
-- Deciders: the project owner, collaborator (org owner)
+- Deciders: project owner, org owner
 - Supersedes: ADR-0002
 
 ## Context
 
-ADR-0002 planned to split planning and product code into separate repos. The org owner (collaborator) confirmed the team should use the existing `Italian-Builders-Org/llm-chef` repo as the single home, with the website in a `/website` folder and the host (e.g. Vercel) deploying that folder as its root. Creating additional org repos was not the preferred path, and a single repo is simpler for a small team at this stage.
+ADR-0002 planned to split planning and product code into separate repos. The org owner confirmed the team should use the existing `Italian-Builders-Org/llm-chef` repo as the single home, with the website in a `/website` folder and the host (e.g. Vercel) deploying that folder as its root. Creating additional org repos was not the preferred path, and a single repo is simpler for a small team at this stage.
 
 ## Decision
 

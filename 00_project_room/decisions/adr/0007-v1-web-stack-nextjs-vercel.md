@@ -2,7 +2,7 @@
 
 - Status: Accepted
 - Date: 2026-06-28
-- Deciders: the project owner
+- Deciders: project owner
 - Related: ADR-0006 (single repo), ADR-0004 (V1 scope); resolves IB-005
 
 ## Context
