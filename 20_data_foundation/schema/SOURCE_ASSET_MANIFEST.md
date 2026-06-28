@@ -38,8 +38,12 @@ Rights label → maximum visibility:
 | `metadata_only` | `metadata_only` |
 | `permission_needed` / blocked | `private` or `metadata_only` |
 
-Visibility is **per asset**, not just per source: a verified source can keep its
-**master PDF `private`** while its **transcription and page images are `public_release`**.
+Visibility is **per asset**, not just per source. In V1 the **only `public_release`
+asset is the Level A transcription**; a verified source keeps its **master PDF, raw
+OCR, and page images `private`**. V1 has **no page-facsimile / "view original page"
+feature** (decided 2026-06-28): page images are retained privately as masters /
+provenance only, never served. Later layers (e.g. extracted recipes, V2) can become
+`public_release` for verified sources.
 
 ## Format
 
@@ -58,7 +62,7 @@ JSON keyed by source slug. Per source: `rights_label` + an `assets[]` array. Per
     "rights_label": "public_domain_verified",
     "assets": [
       { "type": "master_pdf",            "location": "drive:<ref>", "visibility": "private",        "format": "pdf" },
-      { "type": "page_images",           "location": "drive:<ref>", "visibility": "public_release", "format": "jpg", "count": 450 },
+      { "type": "page_images",           "location": "drive:<ref>", "visibility": "private",        "format": "jpg", "count": 450 },
       { "type": "transcription_level_a", "location": "build:<path>","visibility": "public_release", "format": "md",  "status": "pending-OCR" }
     ]
   }
