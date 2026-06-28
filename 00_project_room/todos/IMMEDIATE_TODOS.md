@@ -29,9 +29,9 @@ Last updated: 2026-06-28.
 - [x] Rename local scan folders/files for explicit typo/date inconsistencies and update inventory paths.
 - [x] Merge `Kochrezepte fur den Unterricht im Kochen` with the local `Ricettario austroungarico / Sacher` source alias.
 - [ ] Decide which PDFs/OCR text can be public in V1.
-- [ ] Verify book list against actual filenames/PDFs.
-- [ ] Reconcile seed rows with no obvious local folder match: Dioscoride, L'olivo e l'olio, and Dictionnaire de l'Academie des Gastronomes.
-- [ ] Mark each source with rights/provenance status using `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md`.
+- [x] Verify book list against actual filenames/PDFs (IB-008: bibliographic verification + scanned-title-page inspection; see `10_source_library/inventory/BIBLIOGRAPHIC_VERIFICATION.md`).
+- [x] Reconcile seed rows with no obvious local folder match: Aloi now located (2nd scan batch, 1898), Dioscoride resolved via archive.org (1547); only Dictionnaire de l'Academie des Gastronomes (1962) still has no copy.
+- [~] Mark each source with rights/provenance status using `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md` — started: per-book US/EU public-domain lean in `RIGHTS_STATUS_MATRIX.md` (IB-009/IB-010 seed); reviewer sign-off still pending.
 - [ ] Choose first 3-5 books for pilot extraction.
 
 ## Planning

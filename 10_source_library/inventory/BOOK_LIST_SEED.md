@@ -56,9 +56,10 @@ on the first inspected page but may be multilingual.
 Verification of **title / year / author / edition** (each marked `verified` /
 `corrected` / `unknown`, with corrected values, death years, publishers, and sources)
 is tracked in [`BIBLIOGRAPHIC_VERIFICATION.md`](BIBLIOGRAPHIC_VERIFICATION.md) (IB-008).
-Three passes: web research, an independent adversarial cross-check, and — for the 22
-books physically present locally — **inspection of the scanned title pages** (the
-strongest evidence). Highlights that affect this seed table:
+Three passes: web research, an independent adversarial cross-check, and — for the
+books physically present locally (22 in the first corpus + 3 in a second batch) —
+**inspection of the scanned title pages** (the strongest evidence). Highlights that
+affect this seed table:
 
 - The `metadata status` column below is left as-is per row; the authoritative,
   field-by-field status now lives in the verification doc. Most located books are now

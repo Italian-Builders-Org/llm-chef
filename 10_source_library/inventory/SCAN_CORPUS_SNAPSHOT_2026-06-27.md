@@ -65,7 +65,7 @@ The following local filesystem typo cleanups were applied on 2026-06-28. These a
 
 - The seed inventory now has 28 rows after merging `Kochrezepte fur den Unterricht im Kochen` with the local `RICETTARIO AUSTROUNGARICO 1912 (SACHER)` source alias.
 - This local scan root has 25 top-level book folders.
-- Three seed rows have no obvious folder match in this local scan root: Dioscoride, L'olivo e l'olio, and Dictionnaire de l'Academie des Gastronomes.
+- Three seed rows have no obvious folder match in this local scan root: Dioscoride, L'olivo e l'olio, and Dictionnaire de l'Academie des Gastronomes. (Follow-up 2026-06-28: this snapshot is the *first* scan root only. A second batch "LIBRI SCANSIONATI 2" later supplied Aloi/L'olivo e l'olio + two new books, and Dioscoride was resolved via archive.org; only Dictionnaire remains unlocated. See `SOURCE_CORPUS_AND_STORAGE.md`.)
 - One seed row has an image-only folder with no PDF: Artusi 1891 image/page set.
 - The explicit filename inconsistencies above have been normalized in the local filesystem and in working inventory titles/notes.
 - This snapshot confirms local availability only. It does not verify author, edition, public-domain status, OCR quality, or whether any file can be publicly released.

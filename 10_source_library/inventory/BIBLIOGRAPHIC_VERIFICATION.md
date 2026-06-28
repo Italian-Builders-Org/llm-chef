@@ -22,10 +22,11 @@ Three passes, in increasing authority:
 2. **Adversarial cross-check** — a second agent (Codex / gpt-5.5, web-enabled) tasked
    with disputing weak claims; surfaced several conflicts.
 3. **Local title-page inspection (PRIMARY)** — Codex read the scanned cover / title
-   page / front matter of the 22 books physically present in the local corpus (the
-   3 absent books could not be inspected). **Where the title page disagrees with web
-   research, the title page wins.** This pass corrected multiple web errors (see
-   "What the title pages overturned").
+   page / front matter of the books physically present (22 in the first corpus, plus
+   3 in a second batch; Dioscoride resolved via archive.org). Only the Dictionnaire
+   (1962) is still absent. **Where the title page disagrees with web research, the
+   title page wins.** This pass corrected multiple web errors (see "What the title
+   pages overturned").
 
 A `verified`/`corrected` status backed by "TP" in the notes means it was read off the
 physical copy's title page — the strongest evidence short of a cataloguer's hand.
