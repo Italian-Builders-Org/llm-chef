@@ -2,7 +2,7 @@
 
 Status: Draft issue candidate backlog before GitHub is connected.
 
-Last updated: 2026-06-27 after issue-review pass (epics, owner-type/size, walking skeleton, parallel tracks, bootstrap split).
+Last updated: 2026-06-28 (Recipe Engine scoped as V2; epics, owner-type/size, walking skeleton, bootstrap split).
 
 These are GitHub issue candidates, not active assignments. They are intentionally task-shaped: each should be small enough to own, review, and close.
 
@@ -131,6 +131,10 @@ These create the tracker itself, so they are not GitHub issues. Do them once, by
 | IB-034 Speculative dish image policy/spike | planning | core | S | IB-030 |
 | IB-036 Editorial modernization planning | planning | core | M | IB-030, backlog B002 |
 
+### V2 (anticipated) — Recipe Engine
+
+Not yet broken into issues. The **Recipe Engine** — extract individual recipes from V1's faithful text and classify them (ingredient/protein, course, technique, region/kitchen, period, function) into the structured recipe database — is the anticipated **V2 milestone**. It needs its own **ADR** and issue set, and depends on V1's OCR/text contract (IB-015) and rights labels (IB-010). Most vision experiences (AI recipe search, the Collana, dish maps, trending) depend on it. Do not start before V1 ships. V1's `books.json` is book-level only; the Engine adds the recipe level.
+
 ## Candidates
 
 ### IB-004: Create product repo shell
@@ -240,6 +244,7 @@ These create the tracker itself, so they are not GitHub issues. Do them once, by
 **Dependencies:** IB-010, IB-011, IB-037 (go)
 **Output:** contract for faithful text: what counts as OCR, cleaned OCR, transcription, page references, and known uncertainty.
 **Success check:** product repo can render text without guessing whether it is source text or editorial interpretation.
+**Forward-compat:** capture text with structure and page/section references (not a flat blob) so the V2 Recipe Engine can extract recipes from it later without re-processing.
 **Out of scope:** Level B/C recipe modernization.
 
 ### IB-016: Measure OCR quality for pilot sources
