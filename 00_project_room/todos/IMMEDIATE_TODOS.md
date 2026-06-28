@@ -1,6 +1,6 @@
 # Immediate Todos
 
-Status: Draft local checklist before live GitHub issues/Project board exist.
+Status: Local checklist. Phase 0 complete; issue tracking is now on GitHub issues + the Chef-LLM Project board.
 
 Last updated: 2026-06-28.
 
@@ -41,8 +41,8 @@ Last updated: 2026-06-28.
 - [x] Convert immediate todos into issue drafts.
 - [ ] Convert selected backlog items into GitHub issues only after V1 scope is chosen.
 - [x] Connect local repo to GitHub remote (`origin` → Italian-Builders-Org/llm-chef).
-- [ ] Promote the first live GitHub issues from Phase 0 / Epics A-C; do not bulk-create the whole draft backlog.
-- [ ] Create GitHub Project board once the first promoted issues have clear labels/statuses.
+- [x] Create the V1 GitHub issues (28 across Epics A-G, #1-#28 on milestone `V1`); Epic H / post-V1 left in drafts.
+- [x] Create the Chef-LLM Project board (labels, `V1` milestone, auto-add enabled).
 
 ## Do Not Start Yet
 
