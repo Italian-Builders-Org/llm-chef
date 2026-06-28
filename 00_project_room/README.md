@@ -11,7 +11,7 @@ Use it for:
 - contributor routing and contribution workflow
 - meeting notes
 - source attachment indexes
-- issue drafts before GitHub is connected
+- issue drafts before live GitHub issues/Project board exist
 
 Do not put domain work here if it belongs in a specialized room.
 

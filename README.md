@@ -1,6 +1,6 @@
 # Chef-LLM
 
-Local foundation for organizing the historical Italian cookbook project before GitHub issues, GitHub Projects, or product code.
+Single repository for the historical Italian cookbook project: planning and coordination in the numbered rooms, and the website code in `/website`.
 
 This repo is currently in setup mode. The priority is to make the project legible for humans and agents, define routing, capture unknowns, and avoid turning early screenshots into fake certainty.
 
@@ -21,15 +21,15 @@ This repo is currently in setup mode. The priority is to make the project legibl
 
 ## Repo Topology
 
-This repo is the planning and information repo. It owns decisions, source inventory, provenance policy, data contracts, issue candidates, and coordination docs.
+This is a **single repository** (per `00_project_room/decisions/adr/0006-single-repository-topology.md`). Planning and knowledge live in the numbered rooms (`00_project_room/` … `90_archive/`); the website code lives in `/website`; the data contract lives in `/data`; LLM/RAG code (later) lives in `/llm`.
 
-Do not add product application code here. The live website belongs in a separate product repo, per `00_project_room/decisions/adr/0002-repository-topology.md`.
+Keep planning in the rooms and code in `/website`; do not mix them. The host deploys the `/website` folder as its root.
 
 ## Start Here (Contributors)
 
-This is the **planning & coordination repo** — no product or app code lives here (see Repo Topology above).
+This single repo holds **both** the planning (numbered rooms) and the website code (`/website`); see Repo Topology above.
 
 1. Read the docs in the order above to understand the project and how we work.
-2. **Pick up work from GitHub Issues / the Project board**, not from this repo. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for the fork/branch → PR → review flow.
-3. **Code** goes in the separate **product repo** (being set up — IB-004). Until it exists, the most useful non-code help is source rights/metadata research and the data contract.
+2. **Pick up work from GitHub Issues / the Project board**, not from this file. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for the contribution flow (fork, PR, review).
+3. **Code** goes in `/website` (scaffolded in IB-004). Early on, the most useful non-code help is source rights/metadata research and the data contract.
 4. Before the GitHub board exists, `00_project_room/todos/ISSUE_DRAFTS.md` is the staging list of planned issues; it is superseded by the board once issues are created.

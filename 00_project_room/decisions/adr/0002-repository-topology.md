@@ -1,14 +1,16 @@
 # ADR-0002: Repository Topology
 
-- Status: Accepted
+- Status: Superseded by ADR-0006
 - Date: 2026-06-27
 - Deciders: Adam
+
+> **Superseded by [ADR-0006](0006-single-repository-topology.md).** The team uses a single repo (`llm-chef`) with the website in `/website`, not separate repos. The multi-repo reasoning below is kept for history.
 
 ## Context
 
 The project spans planning/strategy, a public website, source data, and (later) LLM/RAG work. One repo for all of it mixes slow-moving prose with fast-shipping code. Splitting eagerly by topic (website repo, LLM repo, data repo) creates cross-repo coordination before any code exists.
 
-## Decision
+## Superseded Decision (Historical)
 
 Split repos by deploy boundary, release cadence, and audience — not by topic:
 
@@ -18,7 +20,7 @@ Split repos by deploy boundary, release cadence, and audience — not by topic:
 
 Raw source files (e.g. ~20GB of PDFs) live in object storage / Git LFS / a data bucket — never in git.
 
-## Consequences
+## Superseded Consequences (Historical)
 
 - Two repos now, not three. The third is created only when a real deploy boundary justifies it.
 - The source inventory stays in this repo; a future `books.json` is the contract the product repo consumes.

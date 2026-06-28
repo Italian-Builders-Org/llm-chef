@@ -92,11 +92,10 @@ Deferred, not rejected. These become GitHub issues / future ADRs once the founda
 ## Open Decisions
 
 - Which sources can be safely shown publicly in the first website? (rights, IB-010)
-- What database/hosting stack should V1 use? (IB-005)
 - Does V1 include full-text search for verified sources, or only cleaned digital edition pages plus metadata search?
 - Does V1 include an AI feature, or is AI explicitly a post-V1 stretch?
 - When should deferred backlog work be promoted into active scope?
 
 ## Vision Interview Gate
 
-Do not finalize the broader vision until the team confirms public-source policy and product-repo ownership.
+Do not finalize the broader vision until the team confirms public-source policy and V1 ownership on the GitHub issues/Project board.
