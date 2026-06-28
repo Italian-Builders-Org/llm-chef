@@ -26,7 +26,7 @@ operationalize the reading experience; this is not a new scope decision.
 | slug | title | year | lang | storage | rights | role |
 |---|---|---|---|---|---|---|
 | artusi-1891-scienza-in-cucina | La scienza in cucina e l'arte di mangiar bene | 1891 | IT | owner scan (PDF), team corpus | public_domain_verified | **PROTOTYPE** |
-| artusi-1891-scienza-in-cucina-immagini | …same work — image/plate set | 1891 | IT | owner scan (images), team corpus | public_domain_verified | prototype's images |
+| artusi-1891-scienza-in-cucina-immagini | …same work — image/plate set | 1891 | IT | owner scan (images), team corpus | public_domain_verified | not served (images stay private) |
 | unknown-1896-traditions-culinaires | Traditions culinaires… (B. Staffe) | 1896 | FR | owner scan (PDF), team corpus | public_domain_verified | graduate after prototype |
 | unknown-1897-re-dei-cuochi | Il re dei cuochi… (Salani) | 1897 | IT | owner scan (PDF+images), team corpus | public_domain_verified | graduate after prototype |
 | unknown-undated-cuoco-sapiente | Cuoco sapiente… (Guigoni) | 1901 | IT | owner scan (PDF+images), team corpus | public_domain_verified | graduate after prototype |

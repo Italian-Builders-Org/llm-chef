@@ -136,5 +136,6 @@ Layers: **W** work-level · **E** edition/added-material · **S** scan-file/prov
   Hess stays `metadata_only` until 2035.
 - **IB-011** records the signed-off cleared pool and the build-first prototype:
   Artusi 1891 first, with Traditions 1896, Cuciniere 1857, Re dei cuochi 1897,
-  Cuoco sapiente 1901, and the Artusi image set as the cleared graduation pool.
+  and Cuoco sapiente 1901 as the cleared graduation pool. The Artusi image set is
+  verified but **not served** (V1 publishes transcriptions only; images stay private).
 - **IB-014** (asset manifest) and **IB-027** (Level A reader) consume only signed-off rows.
