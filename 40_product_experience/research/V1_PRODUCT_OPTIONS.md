@@ -15,6 +15,7 @@ Current V1:
 - faithful Level A digital editions
 - rights-verified pre-1929 candidate sources only for public OCR/PDF/full-text rendering
 - catalog and metadata search over the full inventory
+- static data contract in `/data`; no V1 database (ADR-0007)
 - no Level B/C reinterpretation
 - no fine-tuning
 - no publishing or fundraising scope
@@ -203,5 +204,5 @@ Answer before engineering starts:
 - Who owns frontend?
 - Who owns data/import?
 - Who owns source rights verification?
-- Where will the site deploy?
-- What database/storage stack should we use?
+- Site deploy and V1 stack: resolved by ADR-0007 (Next.js on Vercel from `/website`; no V1 database).
+- Public asset storage: still governed by rights labels and source asset manifest work.

@@ -27,6 +27,11 @@ Chef-LLM/
 │  ├── 60_publishing_and_partnerships/  publishing · partners      [deferred_post_v1]
 │  └── 90_archive/                      superseded material
 │
+├─ CODE & DATA  ── top-level execution dirs (ADR-0006)
+│  ├── website/   the web app (host deploy root)
+│  ├── data/      data contract (books.json, manifests)
+│  └── llm/       RAG / model code (later)
+│
 └─ LAYER 3 · ARTIFACTS  ── "the work itself"
    the real files inside each room (e.g. adr/ above):
    inventories · schemas · ADRs · drafts · templates
@@ -75,6 +80,18 @@ Layer 3 contains the actual work:
 - generated outputs
 
 Layer 3 files should not redefine repo navigation. If a lower-level file needs broader context, link upward to the room README.
+
+## Code & Data Areas (Single Repo)
+
+Per `00_project_room/decisions/adr/0006-single-repository-topology.md`, code and data live in top-level execution directories, outside the numbered planning rooms:
+
+| Path | Holds | Status |
+|---|---|---|
+| `website/` | the web app; the host deploys this folder as its root | created in IB-004 |
+| `data/` | the data contract (`books.json`, manifests) the site consumes | created with IB-013 |
+| `llm/` | RAG / model code, if and when it starts in-repo | future |
+
+Rule: planning and knowledge go in the numbered rooms; product code goes in `website/`; never put app code inside a numbered room. CODEOWNERS and path-scoped CI keep the two streams separate.
 
 ## Naming Conventions
 

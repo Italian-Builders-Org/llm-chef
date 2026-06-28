@@ -1,6 +1,6 @@
 # Immediate Todos
 
-Status: Draft local checklist before GitHub issues exist.
+Status: Draft local checklist before live GitHub issues/Project board exist.
 
 Last updated: 2026-06-28.
 
@@ -37,12 +37,12 @@ Last updated: 2026-06-28.
 ## Planning
 
 - [x] Choose first 2-4 week milestone: V1 per ADR-0004 (faithful pre-1929 editions + catalog/metadata search).
-- [ ] Choose V1 tech stack for website/database/deployment (→ IB-005, after product repo exists).
+- [x] Choose V1 tech stack: Next.js on Vercel, deployed from `/website`; DB deferred to V2 (ADR-0007).
 - [x] Convert immediate todos into issue drafts.
 - [ ] Convert selected backlog items into GitHub issues only after V1 scope is chosen.
 - [x] Connect local repo to GitHub remote (`origin` → Italian-Builders-Org/llm-chef).
-- [ ] Create GitHub issues only after the first milestone is scoped.
-- [ ] Create GitHub Project board only after issues have clear labels/statuses.
+- [ ] Promote the first live GitHub issues from Phase 0 / Epics A-C; do not bulk-create the whole draft backlog.
+- [ ] Create GitHub Project board once the first promoted issues have clear labels/statuses.
 
 ## Do Not Start Yet
 
