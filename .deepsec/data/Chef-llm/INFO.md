@@ -15,7 +15,7 @@ Highest impact right now is accidental disclosure: raw PDFs/scans, local filesys
 ## Project-specific patterns to flag
 
 - Raw corpus leakage: committed PDFs, page images, OCR dumps, raw source files, or files under `raw_sources/` other than README placeholders.
-- Local/private path leakage: `/Users/...`, local scan roots, personal machine names, private Drive/Slack URLs, or contributor-specific filesystem paths.
+- Local/private path leakage: absolute home-directory paths, local scan roots, personal machine names, private Drive/Slack URLs, or contributor-specific filesystem paths.
 - Rights-gate bypass in docs: language saying pre-1929 means public-release approved, or saying PDF/OCR/full text/page images can be public without `public_domain_verified` review.
 - Scope drift: V1 instructions that start recipe extraction, clean-room recipe rewriting, fine-tuning, account/social features, or public AI answers before ADR/policy gates.
 - Future app placement drift: product code outside `/website`, data contract outside `/data`, or LLM/RAG code outside `/llm` unless a later ADR changes the topology.

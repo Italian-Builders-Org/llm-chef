@@ -1,7 +1,9 @@
 # V1 Public-Release Labels (IB-010)
 
-Status: Active — IB-010 deliverable. **PROPOSED labels — reviewer sign-off PENDING.**
-Not legal advice; project risk triage (per the issue's out-of-scope).
+Status: Active — IB-010 deliverable. **6 rows owner-signed-off to
+`public_domain_verified` (2026-06-28); the rest remain proposed (`public_domain_likely`)
+or blocked (`metadata_only`).** Not legal advice; owner risk-accepted project triage
+(per the issue's out-of-scope).
 
 Last updated: 2026-06-28.
 
@@ -11,11 +13,10 @@ through the five-layer checklist in
 from [`PUBLIC_RELEASE_POLICY.md`](PUBLIC_RELEASE_POLICY.md). Bibliographic basis:
 [`../inventory/BIBLIOGRAPHIC_VERIFICATION.md`](../inventory/BIBLIOGRAPHIC_VERIFICATION.md).
 
-> **No source is `public_domain_verified` here.** That label requires the human
-> reviewer sign-off (empty column below) — an agent cannot grant it. Clearly-PD rows
-> are proposed as `public_domain_likely`, to be elevated to `_verified` only on
-> sign-off. Nothing is marked for public PDF/OCR/full-text without that step, per the
-> issue's success check.
+> **Sign-off status:** the 6 clean rows below are now `public_domain_verified` by
+> owner sign-off on 2026-06-28 (see Sign-off log). The remaining rows stay
+> `public_domain_likely` (an agent cannot self-elevate these) or `metadata_only`
+> (blocked). Only `public_domain_verified` rows may carry public PDF/OCR/full-text.
 
 ## Death-year research (drives the EU/jurisdiction layer)
 
@@ -55,12 +56,12 @@ Layers: **W** work-level · **E** edition/added-material · **S** scan-file/prov
 
 | slug | W | E | S | J (US/EU) | CH | proposed label | reviewer |
 |---|---|---|---|---|---|---|---|
-| artusi-1891-scienza-in-cucina | ok | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
-| artusi-1891-scienza-in-cucina-immagini | ok | flag (image set) | ok (owner) | PD / PD | n/a | public_domain_likely | |
-| unknown-1857-cuciniere-italiano | ok (anon) | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
-| unknown-1896-traditions-culinaires | ok | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
-| unknown-1897-re-dei-cuochi | ok (anon) | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
-| unknown-undated-cuoco-sapiente | ok (anon) | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
+| artusi-1891-scienza-in-cucina | ok | ok | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
+| artusi-1891-scienza-in-cucina-immagini | ok | flag (image set) | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
+| unknown-1857-cuciniere-italiano | ok (anon) | ok | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
+| unknown-1896-traditions-culinaires | ok | ok | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
+| unknown-1897-re-dei-cuochi | ok (anon) | ok | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
+| unknown-undated-cuoco-sapiente | ok (anon) | ok | ok (owner) | PD / PD | n/a | **public_domain_verified** | owner ✓ 2026-06-28 |
 | unknown-undated-cucina-salutare-bambini | ok (Pettini d.1948) | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
 | unknown-1925-frutta-alimentazione-terapia | ok (Masoni d.1941) | ok | ok (owner) | PD / PD | n/a | public_domain_likely | |
 | dioscoride-1546-della-materia-medicinale | ok | ok | **flag (external: archive.org)** | PD / PD | flag (US library digit.) | public_domain_likely (link, don't rehost) | |
@@ -70,6 +71,27 @@ Layers: **W** work-level · **E** edition/added-material · **S** scan-file/prov
 | artusi-1896-ricette | ok (Artusi) | flag (phantom/excerpt) | ok (owner) | PD / PD | n/a | public_domain_likely (fold into Artusi 1891) | |
 | unknown-1912-kochrezepte-unterricht-kochen | **blocked (EU © to 2035)** | ok | ok (owner) | PD / **© 2035** | n/a | **metadata_only** | |
 | unknown-undated-vero-re-cuochi | **blocked (date unconfirmed)** | ok | ok (owner) | ? / ? | n/a | **metadata_only** | |
+
+## Reviewer sign-off log
+
+**2026-06-28 — owner sign-off (risk-accepted; counsel not engaged).**
+
+- **Rule adopted:** full-text release only for works clearly public domain in **both**
+  the US and the EU, with **no unconfirmed facts** and **no reprint/source**
+  complications.
+- **Elevated to `public_domain_verified` (6):** `artusi-1891-scienza-in-cucina`,
+  `artusi-1891-scienza-in-cucina-immagini`, `unknown-1857-cuciniere-italiano`,
+  `unknown-1897-re-dei-cuochi`, `unknown-undated-cuoco-sapiente`,
+  `unknown-1896-traditions-culinaires`.
+- **Basis:** all pre-1929 and US-PD; EU-clear because Artusi and Baronne Staffe both
+  died 1911 (PD 1981) and the three other titles are anonymous (EU 70-years-from-
+  publication, all elapsed). All are owner-scanned originals (no reprint/edition flag).
+- **Conditions:** re-open the row if a named author surfaces on a fuller title page
+  (would reset the anonymous-work clock), or if a scan turns out to be a reprint.
+- **Not signed off:** the death-year-dependent rows (Pettini, Masoni, Aloi) stay
+  `public_domain_likely` pending an authority-record firm-up; the reprint/external rows
+  (Manuale, Trinciante, Dioscoride) stay `likely` pending the edition/host conditions;
+  Hess (`metadata_only`, EU © to 2035) and vero-re (`metadata_only`, undated) stay blocked.
 
 ## Key decisions & rationale
 
@@ -100,19 +122,18 @@ Layers: **W** work-level · **E** edition/added-material · **S** scan-file/prov
 ## Gate check (success criteria)
 
 - Every candidate has all five layers marked `ok` / `flag` / `blocked` / `n/a` above.
-- **No candidate is proposed for public PDF/OCR/full-text without `public_domain_verified`** — the strongest proposed label is `public_domain_likely`, which explicitly is *not* a release approval until the reviewer signs off.
+- **Only the 6 owner-signed-off rows are `public_domain_verified`** and may carry public PDF/OCR/full-text. Every other row is `public_domain_likely` or `metadata_only` — metadata only, no full text.
 - Two candidates (`Hess`, `vero-re`) are `metadata_only` and explicitly blocked.
 
 ## Handoff
 
-- **Reviewer (owner) sign-off** is the next action: fill the `reviewer` column to
-  elevate `public_domain_likely` → `public_domain_verified` (or downgrade). Until then,
-  the public default for every row is metadata-only.
-  - Before elevating the **single-source** rows, firm up the death year from an
-    authority record (VIAF / SBN-ICCU / Wien Geschichte Wiki / a published biography):
-    **Pettini** (low confidence), **Masoni** (medium), **Olga/Adolf Hess** (medium).
-    The anonymous + Artusi rows carry no death-year dependency and are the safest to
-    sign off first.
+- **Done (2026-06-28):** 6 rows signed off to `public_domain_verified` (see Sign-off
+  log). These are the cleared set for IB-011.
+- **To clear more later:** firm up the single-source death years from an authority
+  record (VIAF / SBN-ICCU / Wien Geschichte Wiki / published biography) — **Pettini**,
+  **Masoni** — then they can be elevated; resolve the **vero-re** date; decide the
+  reprint-exclusion and Dioscoride-hosting conditions for Manuale/Trinciante/Dioscoride.
+  Hess stays `metadata_only` until 2035.
 - **IB-011** picks 3–5 pilot sources from the signed-off `public_domain_verified` set —
   the cleanest are Artusi 1891, Traditions 1896, Cuciniere 1857, Re dei cuochi 1897,
   Cuoco sapiente 1901 (owner-scanned originals, no reprint/edition flags).
