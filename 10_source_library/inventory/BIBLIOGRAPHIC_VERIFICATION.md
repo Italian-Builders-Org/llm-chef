@@ -95,7 +95,8 @@ physical copy's title page — the strongest evidence short of a cataloguer's ha
 
 | slug | title | year | author | edition | roll-up |
 |---|---|---|---|---|---|
-| dioscoride-1546-della-materia-medicinale | verified | corrected | corrected | unknown | corrected (no local scan) |
+| dioscoride-1546-della-materia-medicinale | verified | verified | corrected | verified | corrected (archive.org 1547) |
+| cervio-1593-trinciante | verified | verified | verified | verified | verified (TP) |
 | unknown-1832-manuale-cuoco-pasticcere | verified | verified | verified | verified | verified (TP) |
 | unknown-1857-cuciniere-italiano | corrected | verified | unknown | verified | verified (TP) |
 | artusi-1891-scienza-in-cucina | verified | verified | verified | verified | verified |
@@ -104,7 +105,7 @@ physical copy's title page — the strongest evidence short of a cataloguer's ha
 | artusi-1896-ricette | corrected | unknown | corrected | unknown | phantom (Artusi pages) |
 | unknown-1897-re-dei-cuochi | corrected | verified | unknown | verified | verified (TP) |
 | unknown-1912-kochrezepte-unterricht-kochen | corrected | verified | corrected | unknown | corrected (TP) |
-| aloi-1920s-olivo-olio | verified | corrected | verified | unknown | partial (no local scan) |
+| aloi-1920s-olivo-olio | verified | verified | verified | verified | verified (TP: 1898 4ª ed.) |
 | unknown-1925-frutta-alimentazione-terapia | corrected | unknown | verified | unknown | corrected (TP) |
 | boni-1929-talismano-felicita | verified | corrected | verified | verified | corrected (TP) |
 | unknown-1933-cioccolato-valore-alimentare | verified | verified | verified | verified | verified (TP) |
@@ -123,6 +124,7 @@ physical copy's title page — the strongest evidence short of a cataloguer's ha
 | unknown-undated-gran-banchetto-rinascimento | corrected | unknown | corrected | unknown | corrected (TP) |
 | unknown-undated-cucina-ebraica-famiglia | verified | verified | verified | unknown | verified (TP) |
 | unknown-undated-pane-pizza-focacce | unknown | unknown | unknown | unknown | unconfirmable (no title page in scan) |
+| unknown-1988-ricette-rocca | verified | verified | corrected | unknown | corrected (TP: Bertolli/La Cucina Italiana) |
 
 After local inspection: **2 unconfirmable with a scan present** (`ricette-per-ogni-giorno`,
 `pane-pizza`; plus `cucina-romagnola`) — all three because the scan contains no title
@@ -193,14 +195,40 @@ Read by Codex from the scanned cover/title page/front matter. "TP" = title page;
   Not identifiable from the scan. (Web: cucina-romagnola likely Graziano Pozzetto, F.
   Muzzio — unconfirmed against this copy.)
 
-## Web-only rows (not in local corpus)
+## 2026-06-28 update — new acquisitions, Dioscoride, colophon pass
 
-- **dioscoride-1546** — Mattioli's Italian Dioscorides; work first published **1544**
-  (not 1546/47); author Pietro Andrea Mattioli, d. 1577/1578. Italian.
-- **aloi-1920s-olivo-olio** — Antonio Aloi, *L'olivo e l'olio* (Manuali Hoepli); web
-  first ed. 1881; pre-1929 probable (single-source, unconfirmed).
-- **academie-gastronomes-1942** — *Dictionnaire de l'Académie des gastronomes*, **1962**
-  (not 1942), 2 vols, Éditions Prisma, Paris; ed. Paul-Émile Cadilhac.
+New material the owner provided ("LIBRI SCANSIONATI 2") plus an external digitisation
+resolved most of what was previously web-only:
+
+- **dioscoride-1546** — RESOLVED via archive.org (no local scan needed):
+  *Dioscoride Anazarbeo della materia medicinale*, **Fiorenza, appresso Bernardo di
+  Giunti, 1547** (the 1547 Giunti Florence edition; Mattioli is the translator/
+  commentator; work first issued 1544). Italian. Copy:
+  archive.org/details/dioscorideanazar00dios. Now Group-A PD.
+- **aloi-1920s-olivo-olio** — NOW IN CORPUS (new upload). Title page:
+  *L'olivo e l'olio*, Prof. **Antonio Aloi**, **4ª edizione, Ulrico Hoepli, Milano,
+  1898**. Pre-1931 confirmed (US-PD); EU pending Aloi death year. (Work first ed.
+  1881.) The seed slug's "1920s" is now clearly wrong; recommended `aloi-1898-olivo-olio`.
+- **cervio-1593-trinciante** — NEW source. Title page: **Vincenzo Cervio, *Il
+  Trinciante*, Roma, 1593, Nella Stampa del Gabbia**; the scan is an **Arnaldo Forni
+  reprint, 1980** (use the historical content; exclude the reprint's modern matter).
+  Renaissance carving treatise; Group-A PD.
+- **unknown-1988-ricette-rocca** — NEW source. No title page in scan; identified as
+  **"Tempo d'Ulivo — Le ricette della Rocca", Bertolli (Lucca) in collaboration with
+  La Cucina Italiana**, 1988. Modern corporate/promotional; under copyright.
+- **academie-gastronomes-1942** — STILL ABSENT from the corpus. Web only:
+  *Dictionnaire de l'Académie des gastronomes*, **1962** (not 1942), 2 vols, Éditions
+  Prisma, Paris; ed. Paul-Émile Cadilhac. Modern/under copyright regardless.
+
+**Colophon pass:** the last pages of the six still-undated books (vero-re-cucinieri,
+frutta-1925, cucina-salutare, segreti-1968, gran-banchetto, gelati-1975) were read for
+a "finito di stampare" date — **none printed a year in the scanned end-matter**. Those
+years remain from the folder/cover/web, not title-page-confirmed.
+
+Net: only **academie-gastronomes-1942** is now unverifiable for lack of any copy; the
+3 interior-only scans (ricette-per-ogni-giorno, cucina-romagnola, pane-pizza) still
+lack a title page. Rights implications are carried into
+[`../provenance/RIGHTS_STATUS_MATRIX.md`](../provenance/RIGHTS_STATUS_MATRIX.md).
 
 ## Open items / handoff
 
