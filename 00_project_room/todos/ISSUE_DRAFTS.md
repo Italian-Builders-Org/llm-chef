@@ -1,8 +1,10 @@
 # Issue Drafts
 
-Status: Draft issue candidate backlog before live GitHub issues/Project board exist.
+Status: FROZEN. Phase 0 complete (2026-06-28). Superseded by the live GitHub issues (#1-#28, milestone `V1`) and the Chef-LLM Project board. Historical snapshot; do not edit.
 
 Last updated: 2026-06-28 (Recipe Engine scoped as V2; epics, owner-type/size, walking skeleton, bootstrap split).
+
+> **Frozen, do not edit.** The V1 plan is now live as GitHub issues (#1-#28) on milestone `V1` and the Chef-LLM Project board. Track and update work there. This file is kept as the historical plan snapshot.
 
 These are GitHub issue candidates, not active assignments. They are intentionally task-shaped: each should be small enough to own, review, and close.
 
@@ -16,7 +18,7 @@ Backlog ideas live in `00_project_room/backlog/BACKLOG.md`. Do not convert every
 - Public PDF/OCR/full-text work is blocked until source rights are labeled (IB-010).
 - Single repo (ADR-0006): the `Area` field is the primary work area within `llm-chef`: `website` = `/website`, `planning` = the numbered rooms, `data` = `/data`. Pick exactly one primary area; use labels/notes for secondary impact. There is no separate product repo.
 - IDs are frozen. When splitting or adding work, use a new ID; do not renumber existing tickets.
-- This file is **pre-launch staging**. Once GitHub issues exist (Phase 0), it is frozen as a snapshot, superseded by the issues/board, and moved to `90_archive/`. Do not maintain both.
+- This file is **frozen** (Phase 0 complete): the live GitHub issues + board are the source of truth. Kept in place as the plan snapshot so inbound links resolve; do not maintain both.
 
 ## How To Run It
 
