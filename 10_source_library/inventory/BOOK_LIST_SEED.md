@@ -49,6 +49,28 @@ Until then:
 (IB-008). The 1912 Austro-Hungarian / Sacher source is provisionally `German` based
 on the first inspected page but may be multilingual.
 
+## IB-008 Bibliographic Verification
+
+Research-level verification of **title / year / author / edition** (each marked
+`verified` / `corrected` / `unknown`, with corrected values, death years, publishers,
+and sources) is tracked in [`BIBLIOGRAPHIC_VERIFICATION.md`](BIBLIOGRAPHIC_VERIFICATION.md)
+(IB-008), cross-checked by a second independent agent. Highlights that affect this
+seed table:
+
+- The `metadata status` column below stays `unverified` on purpose: IB-008 did **not**
+  inspect title pages (out of scope), so no row is title-page-confirmed yet.
+- Likely **mislabeled** rows to re-identify: `artusi-1896-ricette` (no 1896 Artusi
+  edition exists), `marchesi-1990-abc-cucina` (may be a 1990 RAI2 TV series, not a
+  book), and the `unknown-1912-kochrezepte...` "Sacher" attribution (unsupported).
+- **Working years contradicted by research:** Dioscoride (work 1544), Dictionnaire
+  (1962, not 1942), Il talismano (first ed. 1925/1928, not 1929), Il re dei cuochi
+  (work 1868). See the verification doc for status and caveats.
+- **Authors identified** for many `unknown-` slugs (Agnoletti, Baronne Staffe, Nelli,
+  Masoni, Gosetti della Salda, Spagnol, Martini, Pozzetto, Limentani Pavoncello…).
+  Provisional slugs are **not** changed here (deferred to the data-contract step).
+- **Rights note:** `boni-1929-talismano-felicita` — Ada Boni died 1973, so the work is
+  under EU copyright until ~2044 regardless of edition year.
+
 ## Seed Inventory Table
 
 | slug | title | year | language | filename | scan owner | scanned by | rights label | metadata status | notes |
