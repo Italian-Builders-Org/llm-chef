@@ -28,11 +28,11 @@ Last updated: 2026-06-28.
 - [x] Normalize obvious scan filename typos into working inventory titles and document the original observed inconsistencies.
 - [x] Rename local scan folders/files for explicit typo/date inconsistencies and update inventory paths.
 - [x] Merge `Kochrezepte fur den Unterricht im Kochen` with the local `Ricettario austroungarico / Sacher` source alias.
-- [ ] Decide which PDFs/OCR text can be public in V1.
+- [x] Decide which PDFs/OCR text can be public in V1 (IB-010: 6 books owner-signed-off `public_domain_verified`, all others metadata-only; and V1 publishes cleaned Level A *transcribed text*, not page scans — ADR-0004). See `RELEASE_LABELS_V1.md`.
 - [x] Verify book list against actual filenames/PDFs (IB-008: bibliographic verification + scanned-title-page inspection; see `10_source_library/inventory/BIBLIOGRAPHIC_VERIFICATION.md`).
 - [x] Reconcile seed rows with no obvious local folder match: Aloi now located (2nd scan batch, 1898), Dioscoride resolved via archive.org (1547); only Dictionnaire de l'Academie des Gastronomes (1962) still has no copy.
-- [~] Mark each source with rights/provenance status using `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md` — started: per-book US/EU public-domain lean in `RIGHTS_STATUS_MATRIX.md` (IB-009/IB-010 seed); reviewer sign-off still pending.
-- [ ] Choose first 3-5 rights-eligible books for the Level A OCR/reader pilot.
+- [x] Mark each source with rights/provenance status (IB-010): all 15 candidates labeled in `RIGHTS_STATUS_MATRIX.md` / `RELEASE_LABELS_V1.md`; owner signed off 6 to `public_domain_verified` (2026-06-28); the rest stay `public_domain_likely` / `metadata_only` pending death-year/edition firm-up.
+- [x] Choose pilot sources (IB-011): the 6 verified books are the pilot pool; **Artusi 1891 is the build-first prototype**. See `10_source_library/provenance/V1_PILOT_SELECTION.md`.
 
 ## Planning
 

@@ -24,9 +24,11 @@ The defensible value is the combination of: rare or underused sources, curated p
 
 The vision is reached in milestones, each scoped by its own ADR (V1, then V2, and so on). This document stays high-level and aspirational; ADRs own committed scope.
 
-- **Current milestone, V1:** see [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md). Faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog and metadata search. This is book-level only: a catalog of books and faithful page readers, **not** recipe extraction.
+- **Current milestone, V1:** see [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md). Faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog and metadata search. This is book-level only: a catalog of books and a faithful **Level A reader** (cleaned, well-typeset transcription of the source text, not page facsimiles and not reinterpretation). It is **not** recipe extraction.
 - **Next milestone, V2 (anticipated):** the **Recipe Engine** below, extracting and classifying individual recipes into the structured database. It needs its own ADR and depends on V1's OCR contract and rights work. It is what unlocks recipe search, the Collana, dish maps, and trending.
 - Everything below (the Engine and the End-State Experiences) is **aspirational**: where we are heading, not committed scope. Each becomes its own ADR when promoted.
+
+**V1 in practice.** V1 ships in phases. **V1a** is an offline / localhost prototype (private; prove the OCR/transcription pipeline and the reader/library UI on the pilot source). **V1b** is a public launch, gated on a value-bearing product *and* the rights sign-off. V1's realistic audience is researchers, enthusiasts, and cultural preservation, plus the foundation everything else builds on; the broad "companion for newcomers" value (interpretation, translation, guided/AI search) arrives with **V2**.
 
 ## The Engine: A Structured Recipe Database
 
@@ -91,7 +93,7 @@ Deferred, not rejected. These become GitHub issues / future ADRs once the founda
 
 ## Open Decisions
 
-- Which sources can be safely shown publicly in the first website? (rights, IB-010)
+- How should the six IB-010 `public_domain_verified` sources be represented in the asset manifest and UI rights gates?
 - Does V1 include full-text search for verified sources, or only cleaned digital edition pages plus metadata search?
 - Does V1 include an AI feature, or is AI explicitly a post-V1 stretch?
 - When should deferred backlog work be promoted into active scope?

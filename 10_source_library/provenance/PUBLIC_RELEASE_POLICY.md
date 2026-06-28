@@ -66,4 +66,5 @@ If a source is uncertain, show it as catalog metadata with rights status. Do not
 - Which books are modern editions of older public-domain works?
 - Are there translations, introductions, photographs, or annotations that have separate rights?
 - Will the site host files directly, or link to trusted external public-domain hosts?
-- Who signs off on `public_domain_verified`?
+- For V1, owner sign-off is recorded in `RELEASE_LABELS_V1.md`; define whether the
+  same owner-sign-off process is sufficient for later releases.

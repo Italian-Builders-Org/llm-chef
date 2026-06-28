@@ -1,11 +1,16 @@
 # Rights Verification Research
 
 Status: Working research memo, not legal advice.
-Last updated: 2026-06-27
+Last updated: 2026-06-28
 
 Purpose: explain why "pre-1929" is only a candidate filter and define the checks required before publishing PDFs, OCR, full text, page images, or model outputs.
 
-The per-book first pass that begins applying this checklist (US/EU public-domain lean, scan-artifact, gaps, reviewer sign-off) is [`RIGHTS_STATUS_MATRIX.md`](RIGHTS_STATUS_MATRIX.md), seeded from the bibliographic verification in [`../inventory/BIBLIOGRAPHIC_VERIFICATION.md`](../inventory/BIBLIOGRAPHIC_VERIFICATION.md) (IB-008).
+The per-book first pass that began applying this checklist (US/EU public-domain lean
+and scan-artifact gaps) is [`RIGHTS_STATUS_MATRIX.md`](RIGHTS_STATUS_MATRIX.md). The
+live IB-010 release labels and owner sign-off are in
+[`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md), seeded from the bibliographic
+verification in [`../inventory/BIBLIOGRAPHIC_VERIFICATION.md`](../inventory/BIBLIOGRAPHIC_VERIFICATION.md)
+(IB-008).
 
 ## Bottom Line
 
@@ -184,8 +189,10 @@ Use when the source should be excluded from the project because rights, provenan
 For the first 2-4 week website:
 
 1. Publish catalog metadata for all known books.
-2. Select 3-5 pilot sources only after metadata verification and rights triage.
-3. Publish full PDF/OCR/reader views only for sources marked `public_domain_verified`.
+2. Use the IB-011 pilot/prototype decision in [`V1_PILOT_SELECTION.md`](V1_PILOT_SELECTION.md).
+3. Publish full PDF/OCR/reader views only for sources marked `public_domain_verified`
+   in [`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md), and only through the later asset
+   manifest and UI rights gates.
 4. Treat pre-1929 rows as candidates, not approvals.
 5. Prefer team-owned scans or clearly licensed public-domain sources for V1.
 6. Keep editorial modernization, standardized measurements, and derived books out of V1.
