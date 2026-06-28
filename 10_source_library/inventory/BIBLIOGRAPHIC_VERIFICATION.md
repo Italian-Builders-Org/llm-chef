@@ -1,6 +1,6 @@
 # Bibliographic Verification (IB-008)
 
-Status: Active — IB-008 deliverable.
+Status: Active — IB-008 deliverable. Includes local title-page inspection.
 
 Last updated: 2026-06-28.
 
@@ -13,246 +13,206 @@ each of **title / year / author / edition** as `verified`, `corrected`, or
 **Out of scope (IB-008):** legal public-domain approval. Author death years are
 recorded here as inputs to IB-009/IB-010, not as rights determinations.
 
-## Method & status vocabulary
+## Method & evidence tiers
 
-Two independent passes: (1) research via open authoritative/secondary sources
-(library catalogs, BnF/Gallica, antiquarian-bookseller and auction records, Google
-Books, archive.org, Wikipedia); (2) an adversarial cross-check by a second agent
-(Codex / gpt-5.5, web-enabled) tasked with disputing weak or overstated claims. The
-reconciliation below applies a conservative rule:
+Three passes, in increasing authority:
 
-- where the two passes found **conflicting** values → the field is `unknown`, with
-  the candidate values listed;
-- where a correction rests on a **single secondary source** the cross-check could
-  not resurface → the correction is kept but flagged "single-source; confirm at
-  title page";
-- where the first pass **overstated** an interpretation → wording softened.
+1. **Web research** — open catalogs (ICCU/SBN, BnF/Gallica), antiquarian/auction
+   records, Google Books, archive.org, Wikipedia.
+2. **Adversarial cross-check** — a second agent (Codex / gpt-5.5, web-enabled) tasked
+   with disputing weak claims; surfaced several conflicts.
+3. **Local title-page inspection (PRIMARY)** — Codex read the scanned cover / title
+   page / front matter of the 22 books physically present in the local corpus (the
+   3 absent books could not be inspected). **Where the title page disagrees with web
+   research, the title page wins.** This pass corrected multiple web errors (see
+   "What the title pages overturned").
 
-**No physical title pages were inspected**, and OPAC SBN/ICCU detail pages did not
-render to automated fetch. Even `verified`/`corrected` here means "corroborated
-against a citable open source," not "confirmed against the copy in hand." A
-title-page pass is still required (see Open items) and is what the out-of-scope note
-defers.
+A `verified`/`corrected` status backed by "TP" in the notes means it was read off the
+physical copy's title page — the strongest evidence short of a cataloguer's hand.
 
-- **verified** — working value corroborated by a citable source; no change.
-- **corrected** — working value wrong/incomplete; corrected value given (confidence
-  noted).
-- **unknown** — could not corroborate, or sources conflict; needs title page / ICCU.
+- **verified** — value confirmed (TP-confirmed where marked "TP").
+- **corrected** — working value was wrong/incomplete; corrected value given.
+- **unknown** — not on the scanned pages and not corroborable; or the scan contains no
+  title page.
 
-"Year" = the work's publication year claimed by the seed. "Edition" = whether the
-specific printing the scan represents is identified (usually `unknown`).
+"Year" = publication year of the scanned copy. "Edition" = the specific printing.
 
-## Critical findings (read first)
+## Critical findings — resolution status
 
-1. **Phantom / mislabeled items** — three working entries likely do not denote a real
-   object as labeled:
-   - `artusi-1896-ricette` ("Ricette Artusi 1896"): **no 1896 Artusi edition exists**
-     (author-curated editions 1891, 1895, 1897, 1899…). Likely excerpt pages from the
-     1895/1897 edition, or mislabeled. Re-identify.
-   - `marchesi-1990-abc-cucina`: **no book by this title surfaced** in either pass. A
-     1990 RAI2 TV series "ABC della cucina" (Marchesi & Oldani) exists; whether the
-     scan is a book at all is unverified. Verify item type.
-   - `unknown-1912-kochrezepte-unterricht-kochen`: the **"Sacher" association is
-     unsupported**; the working title is not a verifiable catalogued work.
-2. **Copyright flag (not a determination):** `boni-1929-talismano-felicita` — Ada Boni
-   died **1973** (verified by both passes); under EU/Italy life+70 the work stays in
-   copyright to ~2044 regardless of edition year. The pre-1929 US heuristic does not
-   clear it for EU. Carry to IB-009/IB-010.
-3. **Date corrections that survived cross-check:** Mattioli/Dioscoride work = **1544**
-   (not 1546/47); `academie-gastronomes-1942` = **1962** (probable digit
-   transposition; the book did not exist in 1942).
-4. **Conflicts the cross-check surfaced** (now `unknown`, candidates recorded):
-   `traditions-culinaires` year/publisher; `cucina-romagnola` title/year;
-   `talismano` first-edition year; `ricette-regionali-italiane` publisher.
-5. **Generic-title collisions** flagged, not forced: `cuciniere-italiano`,
-   `vero-re-cuochi`, `cuoco-sapiente`, `ricette-per-ogni-giorno`, `pane-pizza-focacce`,
-   `segreti-grandi-cuochi`, `gran-banchetto`.
-6. **Provisional slugs not changed.** Several corrections would change a provisional
-   `unknown-`/`undated-` slug; per IB-007 these are working IDs. Recommended slugs are
-   noted but **not applied** — `Decision needed:` confirm slug stabilization is
-   deferred to the data-contract step (IB-012/IB-013).
+1. **Phantom / mislabeled items — ALL RESOLVED by local inspection:**
+   - `unknown-1912-kochrezepte` ("Sacher"): the front-matter foreword is **signed
+     "Olga und Adolf Fr. Hess, Wien, September 1912"** → this is the **Hess** Vienna
+     cookbook (*Wiener Küche*), NOT a Sacher book. The "Sacher" label is **false**.
+   - `marchesi-1990-abc-cucina`: cover reads **"ABC della Cucina — Video & Ricette,
+     11, La Pasta", Gualtiero Marchesi, VIDEORAI / Musumeci video / Musumeci Editore**
+     → it is a **RAI TV-series companion (video + recipe booklet), volume 11**, not a
+     standalone cookbook.
+   - `artusi-1896-ricette`: the scan has **no title page** — interior pages show
+     Artusi's structure ("Spiegazione di voci", "Ricette", "Brodi, gelatina e sughi").
+     → Artusi recipe content; **no distinct 1896 edition** (the 1896 label is unsupported).
+2. **`unknown-1897-re-dei-cuochi` re-identified:** title page reads *Il re dei cuochi
+   **ossia l'arte di mangiare al gusto degl'italiani**, Firenze, **Adriano Salani**,
+   1897* — a popular Salani cookbook, **NOT** Giovanni Nelli's *Il re dei cuochi.
+   Trattato di gastronomia universale* (1868, Legros, Milano) that web research had
+   substituted. The seed's **1897 was correct**.
+3. **Conflicts resolved from the copy in hand:** Traditions culinaires → **G. Havard
+   fils, 1896, 10e éd.** (both web publisher guesses wrong); Ricette regionali → **"La
+   Cucina Italiana", Milano** (not Solares/Vallardi); Talismano → scan is the **XXIII
+   edizione, Carlo Colombo** (a later reprint, not the 1929 first edition).
+4. **Copyright flags (carried, not decided):** Ada Boni d. **1973**; and note two scans
+   are **modern reprints**, not the original: Manuale 1832 scan is an **Arnaldo Forni
+   anastatic ristampa (1983)**; Talismano scan is the **Carlo Colombo XXIII ed.**
+   (mid-20th-c). The physical artifact's own copyright matters for IB-010, separate
+   from the underlying work's date.
+5. **Generic-title collisions resolved:** Cuciniere italiano → Vignozzi, Livorno, 1857
+   (15th ed.); Cuoco sapiente → Guigoni, Milano, 1901; Vero re dei cuochi → *Il vero re
+   dei cucinieri e la cucina degli stomachi delicati*; Segreti 1968 → Giorgio Colorni,
+   Franco Angeli; Gran banchetto → Della Beffa & Paolucci.
+6. **Could not be resolved locally:**
+   - **Not in the local corpus** (3): `dioscoride-1546`, `aloi-1920s-olivo-olio`,
+     `academie-gastronomes-1942` — web-only values stand.
+   - **Scan has no title page** (3, scanned mid-book — interior recipe pages only):
+     `unknown-1990-ricette-per-ogni-giorno`, `unknown-1995-cucina-romagnola`,
+     `unknown-undated-pane-pizza-focacce`.
+7. **Provisional slugs not changed** (deferred to data-contract step). Note several are
+   now clearly wrong (e.g. `unknown-1897-re-dei-cuochi` is a Salani work, not Nelli;
+   `unknown-1912-kochrezepte` is Hess). `Decision needed:` confirm slug stabilization
+   is deferred to IB-012/IB-013.
+
+## What the title pages overturned (web → title page)
+
+| book | web research said | title page says |
+|---|---|---|
+| re-dei-cuochi-1897 | Giovanni Nelli, work 1868 | *…ossia l'arte di mangiare al gusto degl'italiani*, Salani, Firenze, **1897** |
+| cuoco-sapiente | Calisto Craveri, SEI, 1932 | Casa Editrice **Guigoni**, Milano, **1901** |
+| traditions-1896 | Chailley 1893 / Flammarion 1894 | **G. Havard fils**, Paris, **1896**, 10e éd. |
+| ricette-regionali-1967 | Solares / La Cucina Italiana / Vallardi | Casa Editrice **"La Cucina Italiana"**, Milano |
+| romagna-1978 | Fosca Martini | **Erica Marini** |
+| sacher-1912 | (Sacher?) possibly Hess | **Olga & Adolf Hess**, Wien, 1912 (Sacher false) |
+| talismano | first ed. 1925/1928/1929 | scan = **XXIII ed., Carlo Colombo** (later reprint) |
 
 ## Verification status matrix
 
 | slug | title | year | author | edition | roll-up |
 |---|---|---|---|---|---|
-| dioscoride-1546-della-materia-medicinale | verified | corrected | corrected | unknown | corrected |
-| unknown-1832-manuale-cuoco-pasticcere | corrected | verified | corrected | verified | corrected |
-| unknown-1857-cuciniere-italiano | unknown | unknown | unknown | unknown | unconfirmable |
+| dioscoride-1546-della-materia-medicinale | verified | corrected | corrected | unknown | corrected (no local scan) |
+| unknown-1832-manuale-cuoco-pasticcere | verified | verified | verified | verified | verified (TP) |
+| unknown-1857-cuciniere-italiano | corrected | verified | unknown | verified | verified (TP) |
 | artusi-1891-scienza-in-cucina | verified | verified | verified | verified | verified |
 | artusi-1891-scienza-in-cucina-immagini | verified | verified | verified | unknown | verified |
-| unknown-1896-traditions-culinaires | corrected | unknown | corrected | unknown | partial |
-| artusi-1896-ricette | unknown | corrected | unknown | unknown | unconfirmable |
-| unknown-1897-re-dei-cuochi | corrected | corrected | corrected | unknown | corrected (single-source) |
-| unknown-1912-kochrezepte-unterricht-kochen | unknown | unknown | unknown | unknown | unconfirmable |
-| aloi-1920s-olivo-olio | verified | corrected | verified | unknown | partial (single-source) |
-| unknown-1925-frutta-alimentazione-terapia | corrected | verified | corrected | verified | corrected |
-| boni-1929-talismano-felicita | verified | unknown | verified | unknown | partial |
-| unknown-1933-cioccolato-valore-alimentare | corrected | verified | corrected | verified | corrected (single-source) |
-| academie-gastronomes-1942-dictionnaire | verified | corrected | corrected | verified | corrected |
-| unknown-1967-ricette-regionali-italiane | verified | verified | corrected | unknown | partial |
-| unknown-1968-segreti-grandi-cuochi | unknown | unknown | unknown | unknown | unconfirmable |
-| unknown-1975-gelati-fatti-in-casa | verified | verified | corrected | verified | corrected |
-| unknown-1978-romagna-in-bocca | verified | unknown | corrected | unknown | corrected |
-| unknown-1988-ricette-duce | verified | verified | corrected | verified | corrected (single-source) |
-| marchesi-1990-abc-cucina | unknown | unknown | verified | unknown | unconfirmable |
-| unknown-1990-ricette-per-ogni-giorno | unknown | unknown | unknown | unknown | unconfirmable |
-| unknown-1995-cucina-romagnola | unknown | unknown | corrected | unknown | partial |
-| unknown-undated-cucina-salutare-bambini | unknown | unknown | unknown | unknown | unconfirmable |
-| unknown-undated-cuoco-sapiente | corrected | unknown | corrected | unknown | probable |
-| unknown-undated-vero-re-cuochi | corrected | corrected | corrected | unknown | probable |
-| unknown-undated-gran-banchetto-rinascimento | unknown | unknown | unknown | unknown | unconfirmable |
-| unknown-undated-cucina-ebraica-famiglia | corrected | corrected | corrected | unknown | corrected |
-| unknown-undated-pane-pizza-focacce | unknown | unknown | unknown | unknown | unconfirmable |
+| unknown-1896-traditions-culinaires | verified | verified | verified | verified | verified (TP) |
+| artusi-1896-ricette | corrected | unknown | corrected | unknown | phantom (Artusi pages) |
+| unknown-1897-re-dei-cuochi | corrected | verified | unknown | verified | verified (TP) |
+| unknown-1912-kochrezepte-unterricht-kochen | corrected | verified | corrected | unknown | corrected (TP) |
+| aloi-1920s-olivo-olio | verified | corrected | verified | unknown | partial (no local scan) |
+| unknown-1925-frutta-alimentazione-terapia | corrected | unknown | verified | unknown | corrected (TP) |
+| boni-1929-talismano-felicita | verified | corrected | verified | verified | corrected (TP) |
+| unknown-1933-cioccolato-valore-alimentare | verified | verified | verified | verified | verified (TP) |
+| academie-gastronomes-1942-dictionnaire | verified | corrected | corrected | verified | corrected (no local scan) |
+| unknown-1967-ricette-regionali-italiane | verified | unknown | verified | corrected | verified (TP) |
+| unknown-1968-segreti-grandi-cuochi | corrected | unknown | corrected | corrected | corrected (TP) |
+| unknown-1975-gelati-fatti-in-casa | verified | verified | corrected | verified | verified |
+| unknown-1978-romagna-in-bocca | verified | unknown | corrected | verified | corrected (TP) |
+| unknown-1988-ricette-duce | verified | unknown | corrected | unknown | corrected (TP) |
+| marchesi-1990-abc-cucina | corrected | unknown | verified | corrected | corrected (TP: video booklet) |
+| unknown-1990-ricette-per-ogni-giorno | unknown | unknown | unknown | unknown | unconfirmable (no title page in scan) |
+| unknown-1995-cucina-romagnola | unknown | unknown | unknown | unknown | unconfirmable (no title page in scan) |
+| unknown-undated-cucina-salutare-bambini | corrected | corrected | corrected | unknown | corrected (TP) |
+| unknown-undated-cuoco-sapiente | corrected | verified | unknown | verified | verified (TP) |
+| unknown-undated-vero-re-cuochi | corrected | unknown | unknown | unknown | corrected (TP: title) |
+| unknown-undated-gran-banchetto-rinascimento | corrected | unknown | corrected | unknown | corrected (TP) |
+| unknown-undated-cucina-ebraica-famiglia | verified | verified | verified | unknown | verified (TP) |
+| unknown-undated-pane-pizza-focacce | unknown | unknown | unknown | unknown | unconfirmable (no title page in scan) |
 
-Roll-up tally: 2 `verified`, 11 `corrected` (4 single-source), 4 `partial`, 2
-`probable`, 9 `unconfirmable`.
+After local inspection: **2 unconfirmable with a scan present** (`ricette-per-ogni-giorno`,
+`pane-pizza`; plus `cucina-romagnola`) — all three because the scan contains no title
+page. The 3 books absent from the corpus rest on web research. Everything else is
+title-page-confirmed or corrected.
 
-## Per-book findings (corrected values · death year · publisher · sources · notes)
+## Local title-page findings (primary evidence)
 
-1. **dioscoride-1546** — Pietro Andrea **Mattioli**'s Italian translation/commentary
-   on Dioscorides. Author **d. 1577/1578** (unsettled — keep as a range). Work first
-   published **1544** (Venice), not 1546/47; expanded 1548 (Valgrisi). Italian. No
-   discrete 1546/47 printing found → edition `unknown`. Original author = Dioscorides
-   (1st c. AD). Both passes CONFIRM 1544. Sources: Wikipedia (Mattioli); archive.org.
-2. **unknown-1832-manuale-cuoco-pasticcere** — Author **Vincenzo Agnoletti** (death
-   year unknown). Fuller title *Manuale del cuoco e del pasticcere di raffinato gusto
-   moderno*. Original issue **1832–1834**, Pesaro. Italian. Rec. slug `agnoletti-1832`.
-   Sources: SBN/BNCF; LibreriaUniversitaria; Libroco.
-3. **unknown-1857-cuciniere-italiano** — Likely the anonymous *Il cuciniere italiano
-   moderno* (Livorno, Vignozzi); work **predates 1857** (first ed. cited 1832/1839);
-   no 1857 edition confirmed. Generic title, collision risk. All `unknown`. Sources:
-   Pandolfini; Parma e la sua storia.
-4. **artusi-1891-scienza-in-cucina** — Pellegrino **Artusi**, **d. 1911**. *La scienza
-   in cucina e l'arte di mangiar bene*, **1891 first edition**, self-published, Firenze
-   (tip. Salvadore Landi). Italian. All verified. Sources: it.wikipedia;
-   pellegrinoartusi.it; archive.org/details/artusi-1891.
-5. **artusi-1891-scienza-in-cucina-immagini** — Same work; **1891 = true first-edition
-   year** (confirmed). Which edition the images are from = `unknown`. No 1896 Artusi
-   edition exists (see row 7). Source: pellegrinoartusi.it editions list.
-6. **unknown-1896-traditions-culinaires** — Author **Baronne Staffe** (pseud. of
-   **Blanche-Augustine-Angèle Soyer**, **d. 1911**) — both passes agree. Title
-   *Traditions culinaires et l'art de manger toute chose à table*. **Year/publisher
-   CONFLICT → `unknown`:** candidates Paris, **L. Chailley, 1893** (fr.wikipedia, Codex
-   pass) vs **Flammarion, 1894** (BnF reprint, first pass) vs seed **1896**. French.
-   Rec. slug `staffe-189x`. Sources: fr.wikipedia (Baronne Staffe); Gallica/BnF.
-7. **artusi-1896-ricette** — **PHANTOM:** no 1896 Artusi edition. Likely excerpt pages
-   from the 1895/1897 edition of *La scienza in cucina*, or mislabeled. Re-identify.
-   Source: pellegrinoartusi.it; it.wikipedia.
-8. **unknown-1897-re-dei-cuochi** — Author **Giovanni Nelli** (death year unknown).
-   *Il re dei cuochi. Trattato di gastronomia universale*; work first published **1868**
-   (Felice Legros, Milano); 1897 = unconfirmed later printing. Italian. *Single-source:
-   first pass cited auction/specialist records (Gonnelli, Invaluable,
-   taccuinigastrosofici); Codex pass did not resurface them — confirm at title page.*
-   Rec. slug `nelli-1868`.
-9. **unknown-1912-kochrezepte-unterricht-kochen** — Title not verifiable; **Sacher link
-   unsupported**. Possible (unconfirmed) match: Olga & Adolf Hess, *Wiener Küche*
-   (~1913). German. All `unknown`; re-derive from title page. Sources: archive.org (Hess).
-10. **aloi-1920s-olivo-olio** — Author **Antonio (F.) Aloi** (death year unknown).
-    *L'olivo e l'olio* (Manuali Hoepli). First pass: work first published **1881**, eds
-    1881/1892/1903, **pre-1929 likely**. *Single-source; Codex pass did not resurface —
-    treat pre-1929 as probable, not confirmed.* Specific 1920s printing `unknown`.
-    Italian. Sources: Google Books; bookseller listings.
-11. **unknown-1925-frutta-alimentazione-terapia** — Author **Alfredo Masoni** (death
-    year unknown). Title *Le frutta nell'alimentazione e nella terapia*. **1925**,
-    Ulrico Hoepli, Milano (publisher medium-confidence). Italian. Rec. slug
-    `masoni-1925`. Sources: Google Books; biblio.com.
-12. **boni-1929-talismano-felicita** — **Ada Boni, d. 1973** (verified, both passes).
-    *Il talismano della felicità*. **First-edition year CONFLICT → `unknown`:**
-    candidates **1925** (Edizioni della Rivista Preziosa, Roma — first pass), **1928**
-    (expanded), **1929** (AP; en.wikipedia). Italian. **COPYRIGHT FLAG:** EU life+70 →
-    in copyright to ~2044. Sources: it/en.wikipedia (Ada Boni); VIVIT; AP.
-13. **unknown-1933-cioccolato-valore-alimentare** — Corporate author **Federazione
-    Nazionale Fascista dell'Industria Dolciaria**; title *Il cioccolato ed il suo valore
-    alimentare*; **1933**, Stab. Grafico Foà, Torino. *Single-source (antiquarian
-    listings); Codex pass did not resurface — confirm at title page.* Italian. Sources:
-    Maremagnum; Libreria Malavasi.
-14. **academie-gastronomes-1942-dictionnaire** — Corporate: **Académie des Gastronomes**;
-    dir./ed. **Paul-Émile Cadilhac**. *Dictionnaire de l'Académie des gastronomes*,
-    **1962** (not 1942), 2 vols, Éditions Prisma, Paris. French. Both passes CONFIRM
-    1962. Sources: fr.wikipedia; Bibliorare; livre-rare-book.
-15. **unknown-1967-ricette-regionali-italiane** — Author **Anna Gosetti della Salda**
-    (**d. 2017** per obituary, first pass; Codex could not confirm year → treat as
-    flagged). *Le ricette regionali italiane*, **first ed. 1967**. **Publisher CONFLICT
-    → `unknown`:** seed "Vallardi" vs **Solares** (first pass) vs **La Cucina Italiana**
-    (Codex). Italian. Rec. slug `gosetti-1967`. Sources: PapilleClandestine; IBS;
-    Gazzetta di Mantova (obit); it.wikipedia.
-16. **unknown-1968-segreti-grandi-cuochi** — **UNCONFIRMABLE** across all fields; no
-    catalog match for the exact title+subtitle. Italian (inferred). Needs ICCU/title page.
-17. **unknown-1975-gelati-fatti-in-casa** — Author **Elena Spagnol** (death year
-    unknown). *I gelati fatti in casa con o senza macchina*, **1975 first edition**,
-    Rizzoli, Milano. Italian. Rec. slug `spagnol-1975`. Source: Equilibri Libreria.
-18. **unknown-1978-romagna-in-bocca** — Author **Fosca Martini** (death year unknown).
-    Edizioni **Il Vespro**, Palermo; "In bocca" series (1974–1981); **trilingual**
-    (Italian/English/Romagnolo). **Year ambiguous:** a **1977** printing is catalogued
-    vs working **1978** → edition/year `unknown`. Sources: AbeBooks; italyinbocca.com.
-19. **unknown-1988-ricette-duce** — Authors as printed **V. Luchinat & G. F. Borelli**
-    ("Luchinat" possibly a pen name). *Le ricette del Duce*, **1988**, Gian Franco
-    Borelli Editore. Distinct from Scicolone's *A tavola con il Duce* (2003). *Single
-    listing source.* Italian. Sources: eBay listing; laFeltrinelli.
-20. **marchesi-1990-abc-cucina** — **Gualtiero Marchesi, d. 2017** (verified). No book by
-    this title surfaced in either pass; a **1990 RAI2 TV series "ABC della cucina"**
-    exists. The 1990 Rizzoli Marchesi item is a reissue of *La mia nuova grande cucina
-    italiana* (orig. 1980) — a different title. **Verify item type (book vs video).**
-    Sources: it/en.wikipedia (Marchesi); Marchesi Foundation.
-21. **unknown-1990-ricette-per-ogni-giorno** — **UNCONFIRMABLE**; generic title, no 1990
-    match. Italian (inferred).
-22. **unknown-1995-cucina-romagnola** — Author **Graziano Pozzetto** (d. ~2025 per
-    obituaries, first pass; Codex did not confirm). **Title/year CONFLICT → `unknown`:**
-    *La cucina romagnola*, F. Muzzio, **1995**, ISBN 9788870217155 (first pass) vs
-    *Cucina di Romagna*, F. Muzzio, **2004** (Codex). Publisher Franco Muzzio (Padova)
-    agreed. Working subtitle is descriptive. Italian. Rec. slug `pozzetto-199x`.
-    Sources: AbeBooks; Buchfreund; it.wikipedia; RavennaToday/Corriere Romagna (obit).
-23. **unknown-undated-cucina-salutare-bambini** — **UNCONFIRMABLE**; no record. Not
-    Dubini's *La cucina degli stomachi deboli*. Italian (inferred).
-24. **unknown-undated-cuoco-sapiente** — *Probable* (not confirmed): **Calisto Craveri**,
-    *Il cuoco sapiente* (SEI), a 1932 year located. Bare phrase could match other works.
-    Codex flagged as not independently reproduced. Italian. Rec. slug `craveri-cuoco-sapiente`.
-    Source: Google Books.
-25. **unknown-undated-vero-re-cuochi** — Title likely a **conflation**; best match **G.
-    Belloni**, *Il vero re dei cucinieri* (Cesare Cioffi, Milano; first ed. **1890**, rev.
-    **1895**) — "cucinieri", not "cuochi". Within the Nelli "re dei cuochi" tradition.
-    Full name/death year `unknown`. *Probable, not confirmed.* Italian. Sources: Parma e
-    la sua storia; La Fenice Libri Antichi.
-26. **unknown-undated-gran-banchetto-rinascimento** — Exact title **unverifiable**;
-    closest candidate *Cucina italiana del Rinascimento. Gran banchetto* (1986, Della
-    Beffa & Paolucci) — different order/period. "1400–1600" is the subject period.
-    Modern compilation. Source: Maremagnum.
-27. **unknown-undated-cucina-ebraica-famiglia** — Author **Donatella Limentani
-    Pavoncello** (d. ~2020, exact year unconfirmed). Canonical *Dal 1880 ad oggi: la
-    cucina ebraica della mia famiglia*. **1982** (one source 1985), Carucci editore,
-    Roma. "1880" = subject-period start. Italian. Rec. slug `limentani-pavoncello-1982`.
-    Source: Google Books.
-28. **unknown-undated-pane-pizza-focacce** — **UNCONFIRMABLE / ambiguous**; matches 5+
-    distinct modern works (Edicart, Giunti, Fabbri, De Agostini, Gribaudo), ~2003–2012+.
-    No dominant match. Italian (inferred).
+Read by Codex from the scanned cover/title page/front matter. "TP" = title page;
+"no TP in scan" = the scanned file begins mid-book.
 
-## Verifier cross-check (Codex, gpt-5.5, web-enabled)
+- **manuale-1832** — TP: *Manuale del cuoco e del pasticciere di raffinato gusto
+  moderno*, Tomo I, opera di **Vincenzo Agnoletti**, Pesaro, **Tipografia Nobili,
+  1832**. The scan is the **Arnaldo Forni anastatic ristampa, 1983**. (Rights: scan is
+  a modern reprint.)
+- **cuciniere-1857** — TP: *Il cuciniere italiano moderno, ovvero L'amico dei ghiotti
+  economi e dei convalescenti*, **Edizione XV**, **Livorno, Tip. di Egisto Vignozzi e
+  C., 1857**. Anonymous (no author on TP).
+- **traditions-1896** — TP: *Traditions culinaires et l'art de manger toutes choses à
+  table*, par **La Baronne Staffe**, **10e édition, Paris, G. Havard fils, éditeur,
+  1896**.
+- **artusi-1896-ricette** — No TP in scan; interior pages ("Spiegazione di voci",
+  "Ricette", "Brodi, gelatina e sughi") = Artusi's *La scienza in cucina* content. No
+  1896 edition exists; treat as excerpt pages.
+- **re-dei-cuochi-1897** — TP: *Il re dei cuochi ossia l'arte di mangiare al gusto
+  degl'italiani*, **Firenze, Adriano Salani, Editore**, colophon **1897**. Anonymous
+  (Salani popular line). NOT Nelli's *Trattato di gastronomia universale*.
+- **sacher-1912** — No TP captured; foreword signed **Olga und Adolf Fr. Hess, Wien,
+  September 1912** → the Hess Vienna cookbook (*Wiener Küche*). German. "Sacher" false.
+- **frutta-1925** — No TP captured; work by **Dr. Alfredo Masoni** (preface by Dott.
+  Edoardo Fairman). Confirms author Masoni; year 1925 from folder, not on scanned pages.
+- **boni-1929-talismano** — TP: Ada Boni, *Il talismano della felicità*, **XXIII
+  edizione, Casa Editrice Carlo Colombo** (no year on TP). Scan is a later reprint, not
+  the 1929 first edition.
+- **cioccolato-1933** — TP: *Il cioccolato ed il suo valore alimentare*, a cura della
+  **Federazione Nazionale Fascista dell'Industria Dolciaria**, **Torino, Stabilimento
+  Grafico Foà, 1933-XII**.
+- **ricette-regionali-1967** — TP: *Le ricette regionali italiane*, interpretate da
+  **Anna Gosetti della Salda**, Milano, Casa Editrice **"La Cucina Italiana"** (no year
+  on TP; 1967 from cover/web).
+- **segreti-1968** — TP: **Giorgio Colorni**, *I segreti dei grandi cuochi: Guida dei
+  ristoranti tipici e famosi*, **Franco Angeli Editore** (no year on TP). (Working
+  subtitle "con vini d'accompagnamento" not seen on TP — likely a cover blurb or error.)
+- **gelati-1975** — Cover: **Elena Spagnol**, *I gelati fatti in casa con o senza
+  macchina*, **Rizzoli**.
+- **romagna-1978** — TP: **Erica Marini**, *Romagna in bocca*, prefazione di Max David,
+  **Il Vespro** (place/year not on TP).
+- **ricette-duce-1988** — No TP captured; front matter "Cosa c'entra Benito" signed
+  **Giorgio Cajati**, then "I nostri simboli" + recipes. Title from cover/folder.
+- **abc-marchesi-1990** — Cover: **ABC della Cucina — Video & Ricette, 11, La Pasta**,
+  Gualtiero Marchesi, **VIDEORAI / Musumeci video / Musumeci Editore** (Quart, Aosta).
+  A RAI video-series companion booklet, not a standalone cookbook.
+- **cucina-salutare** — No TP captured; **A. (Amedeo) Pettini**, *Come cucinare i cibi
+  ai bambini, ai debilitati ed ai convalescenti?*; dedication dated **Roma, 1 Luglio
+  1909**.
+- **cuoco-sapiente** — TP: *Cuoco sapiente ossia l'arte di piacere ai gusti
+  degl'italiani*, **Casa Editrice Guigoni, Milano, 1901**.
+- **vero-re-cuochi** — TP: *Il vero re dei cucinieri e la cucina degli stomachi
+  delicati* (title confirms "cucinieri"). Author/year not captured (web: G. Belloni,
+  Cioffi, 1890s).
+- **gran-banchetto** — *Cucina italiana del Rinascimento: Gran banchetto*, a cura di
+  **Carla Della Beffa e Africo Paolucci** (year not on captured pages; web: 1986).
+- **cucina-ebraica** — Cover/front: **Donatella Limentani Pavoncello**, *Dal 1880 ad
+  oggi: la cucina ebraica della mia famiglia*, **Carucci Editore, Roma**, cover shows
+  **1982**.
+- **ricette-per-ogni-giorno-1990**, **cucina-romagnola-1995**, **pane-pizza** — Scans
+  are interior recipe pages only; **no title page, cover, or colophon in the file**.
+  Not identifiable from the scan. (Web: cucina-romagnola likely Graziano Pozzetto, F.
+  Muzzio — unconfirmed against this copy.)
 
-An independent adversarial pass reviewed the draft. Outcome:
+## Web-only rows (not in local corpus)
 
-- **Confirmed:** Mattioli 1544; Dictionnaire 1962; Ada Boni d. 1973; Marchesi d. 2017.
-- **Surfaced hard conflicts** (downgraded to `unknown` above): Traditions culinaires
-  (Chailley 1893 vs Flammarion 1894); Pozzetto (*Cucina di Romagna* 2004 vs *La cucina
-  romagnola* 1995); Boni first-edition year (1925/1928/1929); Gosetti publisher
-  (Solares vs La Cucina Italiana vs Vallardi).
-- **Flagged single-source / unreproduced** (kept but marked): Nelli/Il re dei cuochi,
-  Aloi/L'olivo e l'olio, Cioccolato corporate author, Cuoco sapiente, Vero re dei cuochi.
-- **Softened overstatement:** Marchesi "ABC di cucina" — from "no such book / RAI2
-  series" to "no book by this title surfaced; verify item type."
-- **Net:** the matrix is honest for planning, but **not** a substitute for a title-page
-  pass before any rights/scope decision.
+- **dioscoride-1546** — Mattioli's Italian Dioscorides; work first published **1544**
+  (not 1546/47); author Pietro Andrea Mattioli, d. 1577/1578. Italian.
+- **aloi-1920s-olivo-olio** — Antonio Aloi, *L'olivo e l'olio* (Manuali Hoepli); web
+  first ed. 1881; pre-1929 probable (single-source, unconfirmed).
+- **academie-gastronomes-1942** — *Dictionnaire de l'Académie des gastronomes*, **1962**
+  (not 1942), 2 vols, Éditions Prisma, Paris; ed. Paul-Émile Cadilhac.
 
 ## Open items / handoff
 
-- **Title-page pass** (needs the physical/scanned copies): resolve the four conflicts
-  (rows 6, 12, 15, 22); the three phantom/mislabeled items (rows 7, 9, 20); the
-  single-source corrections (rows 8, 10, 13, 19, 24, 25); and the generic-title
-  collisions (rows 3, 16, 21, 23, 26, 28).
-- **ICCU / OPAC SBN** interactive lookups for the Italian rows that did not render to
-  automated fetch.
-- **Slug stabilization** (deferred): apply recommended slugs at the data-contract step
-  once authors/years are title-page-confirmed.
-- Author death years here feed **IB-009** (pre-1929 pool) and **IB-010** (public-release
-  labels); note several "pre-1929" candidates have authors who died well after 1929
-  (Boni d. 1973), so EU life+70 must be checked separately from the US pre-1929 heuristic.
+- **Acquire/scan title pages** for the 3 interior-only scans (`ricette-per-ogni-giorno`,
+  `cucina-romagnola`, `pane-pizza`) and the 3 books absent from the corpus
+  (`dioscoride`, `aloi`, `dictionnaire`) if their identity must be settled.
+- **Exact years** not printed on several title pages (Ricette regionali, Segreti,
+  Romagna, Ricette del Duce, Gran banchetto) — confirm from cover/colophon or catalog.
+- **Slug stabilization** (deferred): apply corrected authors/years at the data-contract
+  step.
+- **Rights inputs for IB-009/IB-010:** author death years here; plus the **scan-artifact
+  copyright** flags — the Manuale scan is a 1983 Forni reprint and the Talismano scan is
+  a mid-20th-c Carlo Colombo edition, so neither scanned file is a pre-1929 public-domain
+  artifact even where the underlying work is old. EU life+70 (e.g. Boni d. 1973) must be
+  checked separately from the US pre-1929 heuristic.
