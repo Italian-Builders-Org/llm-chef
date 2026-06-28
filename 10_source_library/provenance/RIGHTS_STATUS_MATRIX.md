@@ -1,17 +1,18 @@
-# Rights Status Matrix (seed for IB-009 / IB-010)
+# Rights Status Matrix (historical seed for IB-009 / IB-010)
 
-Status: Active — working seed. NOT a legal clearance.
+Status: Historical working seed. Superseded for live V1 release labels by
+[`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md). NOT a legal clearance.
 
 Last updated: 2026-06-28.
 
-This is the rights/public-domain **gap map** that feeds IB-009 (V1 pre-1929 candidate
-pool) and IB-010 (public-release labels). It records, per book, the likely US and
-EU/Italy status, the **scan artifact** (original vs modern reprint), what is still
-missing to clear it, and a reviewer sign-off column (empty until a human signs).
+This is the rights/public-domain **gap map** that fed IB-009 (V1 pre-1929 candidate
+pool) and seeded IB-010 (public-release labels). It records, per book, the likely US
+and EU/Italy status, the **scan artifact** (original vs modern reprint), and what was
+missing to clear it.
 
 > **This is not legal advice and not a clearance.** It is a structured first pass to
-> prioritise review. No source is cleared for public display until a reviewer signs
-> off here per [`PUBLIC_RELEASE_POLICY.md`](PUBLIC_RELEASE_POLICY.md). See also
+> prioritise review. Use [`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md) for the live
+> IB-010 labels and owner sign-off. See also
 > [`RIGHTS_VERIFICATION_RESEARCH.md`](RIGHTS_VERIFICATION_RESEARCH.md) and the
 > bibliographic basis in [`../inventory/BIBLIOGRAPHIC_VERIFICATION.md`](../inventory/BIBLIOGRAPHIC_VERIFICATION.md).
 
@@ -102,27 +103,30 @@ input). Artifact: `orig` original printing scanned · `reprint` modern reprint s
 ## What this means for V1
 
 The pre-1929 subset is formalised as the candidate pool in
-[`V1_CANDIDATE_POOL.md`](V1_CANDIDATE_POOL.md) (IB-009) — candidate-only, not cleared.
+[`V1_CANDIDATE_POOL.md`](V1_CANDIDATE_POOL.md) (IB-009). The live IB-010 labels and the
+six `public_domain_verified` owner sign-offs are in
+[`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md).
 
 
-- **Track-1 pilot pool:** the Group-A records — anchored by Artusi 1891, the
-  Mattioli/Dioscoride 1547, and Cervio's *Trinciante* 1593 — are the strongest review
-  candidates. They are **not public-release approvals** until a reviewer signs off.
-  Two (Manuale, Trinciante) are scanned from **Forni facsimiles**: fine to use the
-  historical content if approved, but exclude the reprints' modern additions.
-- **Group B (5 books)** are US-clear and likely EU-clear; the only blocker is an
-  author death year (or, for `vero-re-cuochi`, a publication date). These are the
-  highest-value research targets for IB-009.
+- **Track-1 review candidates:** the Group-A records — anchored by Artusi 1891, the
+  Mattioli/Dioscoride 1547, and Cervio's *Trinciante* 1593 — were the strongest review
+  candidates. The clean owner-scanned originals that passed the bright-line rule are
+  signed off in `RELEASE_LABELS_V1.md`; the reprint/external rows remain conditional.
+- **Group B rows** are carried forward in `RELEASE_LABELS_V1.md`: Pettini and Masoni
+  remain `public_domain_likely` pending stronger authority records, Hess is blocked
+  as `metadata_only`, Aloi remains EU-unconfirmed, and `vero-re-cuochi` still needs a
+  publication date.
 - **Track-2 (clean-room)** belongs to the anticipated V2 Recipe Engine, not V1. When
   promoted by its own ADR, Group A is the lowest-risk starting pool for proving the
   extraction/re-expression workflow before touching Group C.
 
-## Open inputs (hand to IB-009)
+## Remaining inputs after IB-010
 
-- **Death years needed (EU):** Aloi, Pettini, Hess (×2), Masoni — and confirm
-  Agnoletti is comfortably pre-1885. Source via VIAF / SBN-ICCU / BnF / DNB authority
-  records; skip (and mark EU `?`) where genuinely unfindable rather than guessing.
+- **Death years / authority records:** Aloi remains unresolved; Pettini and Masoni
+  have single-source death years and need stronger authority records before any
+  `public_domain_verified` elevation. Hess is resolved enough to block public text
+  until 2035.
 - **Date needed:** `vero-re-cuochi` (not in the scan; web points to Belloni 1890s).
-- **Confirm anonymity** of Cuciniere, Re dei cuochi (Salani), Cuoco sapiente — if truly
-  anonymous, no death year is required and they are PD.
-- **Reviewer sign-off** column to be completed under IB-010 before any public display.
+- **Reprint/external conditions:** Manuale, Trinciante, and Dioscoride need the
+  edition/source-file conditions in `RELEASE_LABELS_V1.md` resolved before public
+  rehosting or full-text release.

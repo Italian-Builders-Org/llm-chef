@@ -51,6 +51,15 @@ Local filesystem paths are withheld from the repo by policy.
   (older type, more ligatures); deliberately **graduated last**, once the pipeline is
   proven on cleaner sources.
 
+## Prototype flagship vs public flagship
+
+Artusi is the **prototype** (cleanest type, an existing transcription to validate
+against) and a recognizable anchor, but it is the **least rare** book here and a weak
+public differentiator. When V1 goes public (V1b), **lead with the rare/underused
+titles** that aren't freely available elsewhere (the anonymous *Cuoco sapiente* 1901,
+*Il re dei cuochi* 1897, and later the obscure regional/agronomy sources). Artusi rides
+along as the familiar name, not the headline.
+
 ## Prototype plan (one book, two things to prove)
 
 1. **Reader UI** — render an existing clean Artusi transcription in the e-reader to

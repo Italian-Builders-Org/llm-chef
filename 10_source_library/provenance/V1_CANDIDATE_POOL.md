@@ -69,8 +69,9 @@ still feed the post-V1 clean-room **Track-2 (V2 Recipe Engine)**, not V1 full-te
 
 ## Caveats carried into IB-010 / IB-011
 
-- **No row here is cleared.** Each still needs the four-layer rights review
-  (work / edition / scan-file / jurisdiction) and a reviewer sign-off (IB-010).
+- **No row is cleared by this file.** Clearance lives in
+  [`RELEASE_LABELS_V1.md`](RELEASE_LABELS_V1.md); as of 2026-06-28, six candidates are
+  owner-signed-off there as `public_domain_verified`.
 - **Reprint artifacts:** the Manuale (Forni 1983) and Trinciante (Forni 1980) scans are
   modern reprints of public-domain works — usable content, but the reprint's added
   matter (intro, notes, typesetting) is excluded and the scan-file rights differ.
@@ -79,5 +80,6 @@ still feed the post-V1 clean-room **Track-2 (V2 Recipe Engine)**, not V1 full-te
   IB-010.
 - **Date to confirm:** `vero-re-cuochi` is included provisionally until its publication
   date is established.
-- **Pilot selection (IB-011)** should favor the cleanest, highest-value rows — e.g.
-  Artusi 1891 (marquee, clean), plus 2–4 others from the anonymous/old-and-clean set.
+- **Pilot selection (IB-011)** now lives in
+  [`V1_PILOT_SELECTION.md`](V1_PILOT_SELECTION.md): Artusi 1891 is the build-first
+  prototype, with the remaining signed-off rows as the cleared graduation pool.

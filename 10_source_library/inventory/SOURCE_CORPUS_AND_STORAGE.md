@@ -79,11 +79,13 @@ Rocca* 1988); same withheld-path policy applies.
 - `Fact:` **Bibliographic metadata** (title/author/year/edition/publisher) is now
   verified per book in [`BIBLIOGRAPHIC_VERIFICATION.md`](BIBLIOGRAPHIC_VERIFICATION.md)
   (IB-008), including against the scanned title pages where present. **Public-domain
-  status and OCR quality remain unverified** — see
+  status is signed off only for the six V1 rows in
+  [`../provenance/RELEASE_LABELS_V1.md`](../provenance/RELEASE_LABELS_V1.md); OCR
+  quality remains unverified.** See
   [`../provenance/RIGHTS_STATUS_MATRIX.md`](../provenance/RIGHTS_STATUS_MATRIX.md) for
-  the rights gap map. Note two scans are modern reprints (Manuale = Forni 1983,
-  Trinciante = Forni 1980) and one source is external (Dioscoride, archive.org), which
-  changes the "all owner-scanned" assumption for those rows.
+  the historical rights gap map. Note two scans are modern reprints (Manuale = Forni
+  1983, Trinciante = Forni 1980) and one source is external (Dioscoride, archive.org),
+  which changes the "all owner-scanned" assumption for those rows.
 
 ## Out of Scope
 

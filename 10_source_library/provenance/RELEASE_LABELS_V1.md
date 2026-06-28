@@ -134,7 +134,7 @@ Layers: **W** work-level · **E** edition/added-material · **S** scan-file/prov
   **Masoni** — then they can be elevated; resolve the **vero-re** date; decide the
   reprint-exclusion and Dioscoride-hosting conditions for Manuale/Trinciante/Dioscoride.
   Hess stays `metadata_only` until 2035.
-- **IB-011** picks 3–5 pilot sources from the signed-off `public_domain_verified` set —
-  the cleanest are Artusi 1891, Traditions 1896, Cuciniere 1857, Re dei cuochi 1897,
-  Cuoco sapiente 1901 (owner-scanned originals, no reprint/edition flags).
+- **IB-011** records the signed-off cleared pool and the build-first prototype:
+  Artusi 1891 first, with Traditions 1896, Cuciniere 1857, Re dei cuochi 1897,
+  Cuoco sapiente 1901, and the Artusi image set as the cleared graduation pool.
 - **IB-014** (asset manifest) and **IB-027** (Level A reader) consume only signed-off rows.
