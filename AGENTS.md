@@ -34,6 +34,11 @@ Keep docs honest at the moment work changes them, not later.
 - If you notice a stale doc you are not changing, flag it in `00_project_room/todos/IMMEDIATE_TODOS.md` instead of leaving it silently wrong.
 - A deleted or moved artifact must have its references updated in the same change.
 
+## Commit Conventions
+
+- Do not add AI co-author trailers. No `Co-Authored-By:` lines for Claude, Codex, or any agent — commits are attributed to the human author only.
+- Keep messages concise and imperative; reference issue IDs (`Closes #NN`) where applicable.
+
 ## 3-Layer Folder System
 
 See `FOLDER_MAP.md` for the layer model, naming conventions, room map, and the Subfolder Creation Rule. Do not restate that structure here.
