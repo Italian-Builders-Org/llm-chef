@@ -10,7 +10,7 @@ Chef-LLM aims to become an open, educational companion platform that resurfaces 
 
 The recipes themselves are not scarce: they exist in books and online. The scarcity is **curation, organization, and guidance**. Most people don't know where to start, which books to buy, or what to learn, so they hit information overload and stop. Chef-LLM's value is to be the companion that turns a scattered, intimidating corpus into something anyone curious can explore and learn from.
 
-This is an educational resource first, and an open-source contribution to cultural preservation, not "here are some scanned books, good luck." It is grounded in an existing collection of around 25 scanned historical books (~17 GB), released as open source where rights allow.
+This is an educational resource first, and an open-source contribution to cultural preservation, not "here are some scanned books, good luck." It is grounded in roughly 30 known source records, anchored by about 17 GB of owner-scanned files in the first corpus plus later additions, to be opened only where rights allow.
 
 ## The Problem We Solve
 
@@ -98,4 +98,4 @@ Deferred, not rejected. These become GitHub issues / future ADRs once the founda
 
 ## Vision Interview Gate
 
-Do not finalize the broader vision until the team confirms public-source policy and V1 ownership on the GitHub issues/Project board.
+Do not finalize the broader vision until the team confirms public-source policy and release-review ownership. V1 issue ownership now lives on GitHub issues / the Project board.

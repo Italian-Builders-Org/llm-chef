@@ -32,14 +32,14 @@ Last updated: 2026-06-28.
 - [x] Verify book list against actual filenames/PDFs (IB-008: bibliographic verification + scanned-title-page inspection; see `10_source_library/inventory/BIBLIOGRAPHIC_VERIFICATION.md`).
 - [x] Reconcile seed rows with no obvious local folder match: Aloi now located (2nd scan batch, 1898), Dioscoride resolved via archive.org (1547); only Dictionnaire de l'Academie des Gastronomes (1962) still has no copy.
 - [~] Mark each source with rights/provenance status using `10_source_library/provenance/RIGHTS_VERIFICATION_RESEARCH.md` — started: per-book US/EU public-domain lean in `RIGHTS_STATUS_MATRIX.md` (IB-009/IB-010 seed); reviewer sign-off still pending.
-- [ ] Choose first 3-5 books for pilot extraction.
+- [ ] Choose first 3-5 rights-eligible books for the Level A OCR/reader pilot.
 
 ## Planning
 
 - [x] Choose first 2-4 week milestone: V1 per ADR-0004 (faithful pre-1929 editions + catalog/metadata search).
 - [x] Choose V1 tech stack: Next.js on Vercel, deployed from `/website`; DB deferred to V2 (ADR-0007).
 - [x] Convert immediate todos into issue drafts.
-- [ ] Convert selected backlog items into GitHub issues only after V1 scope is chosen.
+- [x] Keep post-V1 backlog items out of live V1 issues; use the frozen Epic H snapshot only as future context.
 - [x] Connect local repo to GitHub remote (`origin` → Italian-Builders-Org/llm-chef).
 - [x] Create the V1 GitHub issues (28 across Epics A-G, #1-#28 on milestone `V1`); Epic H / post-V1 left in drafts.
 - [x] Create the Chef-LLM Project board (labels, `V1` milestone, auto-add enabled).

@@ -78,8 +78,9 @@ affect this seed table:
   (Ricette regionali, "La Cucina Italiana"), Giorgio Colorni (Segreti 1968, Franco
   Angeli), Amedeo Pettini (Cucina salutare, ~1909), Limentani Pavoncello (1982).
   Provisional slugs are **not** changed here (deferred to the data-contract step).
-- **Not resolvable locally:** 3 books are absent from the corpus (Dioscoride, Aloi,
-  Dictionnaire); 3 scans contain no title page (Ricette per ogni giorno, Cucina
+- **Not resolvable from the current scans:** only Dictionnaire remains absent from
+  the corpus. Dioscoride is resolved via archive.org and Aloi is now in the second
+  batch. Three scans contain no title page (Ricette per ogni giorno, Cucina
   romagnola, Pane pizza focacce — scanned mid-book).
 - **Rights note:** `boni-1929-talismano-felicita` — Ada Boni died 1973 (EU copyright to
   ~2044); and the scan is the **XXIII ed., Carlo Colombo**, a later reprint, not the

@@ -60,18 +60,21 @@ physical copy's title page — the strongest evidence short of a cataloguer's ha
    fils, 1896, 10e éd.** (both web publisher guesses wrong); Ricette regionali → **"La
    Cucina Italiana", Milano** (not Solares/Vallardi); Talismano → scan is the **XXIII
    edizione, Carlo Colombo** (a later reprint, not the 1929 first edition).
-4. **Copyright flags (carried, not decided):** Ada Boni d. **1973**; and note two scans
-   are **modern reprints**, not the original: Manuale 1832 scan is an **Arnaldo Forni
-   anastatic ristampa (1983)**; Talismano scan is the **Carlo Colombo XXIII ed.**
-   (mid-20th-c). The physical artifact's own copyright matters for IB-010, separate
-   from the underlying work's date.
+4. **Copyright flags (carried, not decided):** Ada Boni d. **1973**; and note three
+   scans are **modern reprints**, not the original: Manuale 1832 scan is an **Arnaldo
+   Forni anastatic ristampa (1983)**; Cervio 1593 is an **Arnaldo Forni reprint
+   (1980)**; Talismano scan is the **Carlo Colombo XXIII ed.** (mid-20th-c). The
+   physical artifact's own copyright matters for IB-010, separate from the underlying
+   work's date.
 5. **Generic-title collisions resolved:** Cuciniere italiano → Vignozzi, Livorno, 1857
    (15th ed.); Cuoco sapiente → Guigoni, Milano, 1901; Vero re dei cuochi → *Il vero re
    dei cucinieri e la cucina degli stomachi delicati*; Segreti 1968 → Giorgio Colorni,
    Franco Angeli; Gran banchetto → Della Beffa & Paolucci.
-6. **Could not be resolved locally:**
-   - **Not in the local corpus** (3): `dioscoride-1546`, `aloi-1920s-olivo-olio`,
-     `academie-gastronomes-1942` — web-only values stand.
+6. **Could not be resolved from the current scans:**
+   - **Still absent from the corpus** (1): `academie-gastronomes-1942` — web-only
+     values stand.
+   - `dioscoride-1546` is resolved via archive.org; `aloi-1920s-olivo-olio` is now
+     in the second scan batch and title-page-confirmed.
    - **Scan has no title page** (3, scanned mid-book — interior recipe pages only):
      `unknown-1990-ricette-per-ogni-giorno`, `unknown-1995-cucina-romagnola`,
      `unknown-undated-pane-pizza-focacce`.
@@ -127,10 +130,10 @@ physical copy's title page — the strongest evidence short of a cataloguer's ha
 | unknown-undated-pane-pizza-focacce | unknown | unknown | unknown | unknown | unconfirmable (no title page in scan) |
 | unknown-1988-ricette-rocca | verified | verified | corrected | unknown | corrected (TP: Bertolli/La Cucina Italiana) |
 
-After local inspection: **2 unconfirmable with a scan present** (`ricette-per-ogni-giorno`,
-`pane-pizza`; plus `cucina-romagnola`) — all three because the scan contains no title
-page. The 3 books absent from the corpus rest on web research. Everything else is
-title-page-confirmed or corrected.
+After local inspection: **3 unconfirmable with a scan present** (`ricette-per-ogni-giorno`,
+`pane-pizza`, and `cucina-romagnola`) — all three because the scan contains no title
+page. Only Dictionnaire remains absent from the corpus and rests on web research.
+Everything else is title-page-confirmed, externally resolved, or corrected.
 
 ## Local title-page findings (primary evidence)
 
@@ -234,8 +237,8 @@ lack a title page. Rights implications are carried into
 ## Open items / handoff
 
 - **Acquire/scan title pages** for the 3 interior-only scans (`ricette-per-ogni-giorno`,
-  `cucina-romagnola`, `pane-pizza`) and the 3 books absent from the corpus
-  (`dioscoride`, `aloi`, `dictionnaire`) if their identity must be settled.
+  `cucina-romagnola`, `pane-pizza`) and acquire the absent Dictionnaire if its
+  identity must be settled.
 - **Exact years** not printed on several title pages (Ricette regionali, Segreti,
   Romagna, Ricette del Duce, Gran banchetto) — confirm from cover/colophon or catalog.
 - **Slug stabilization** (deferred): apply corrected authors/years at the data-contract

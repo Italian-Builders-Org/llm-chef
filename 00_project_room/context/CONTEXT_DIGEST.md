@@ -1,6 +1,6 @@
 # Context Digest
 
-Status: Working digest from user-provided context on 2026-06-27.
+Status: Historical digest from user-provided context on 2026-06-27; partially superseded by ADR-0004, ADR-0006, ADR-0007, and the live GitHub issues / Project board.
 
 ## Facts From Current Context
 
@@ -9,7 +9,7 @@ Status: Working digest from user-provided context on 2026-06-27.
 - Some sources may be rare, old, regional, handwritten, or not well represented in model training data.
 - Several collaborators are interested in the project and discussed using Slack, GitHub issues, PRs, and GitHub Projects.
 - The folder system should be readable by both humans and agents.
-- The desired order is local organization first, GitHub issues/project later.
+- At the time, the desired order was local organization first, GitHub issues/project later. That sequencing is now complete.
 
 ## Ideas Mentioned
 
@@ -29,7 +29,6 @@ Status: Working digest from user-provided context on 2026-06-27.
 - Modernizing recipes can destroy historical value if not labeled carefully.
 - A polished app before reliable data would create false confidence.
 
-## Decision Needed
+## Resolution
 
-The team needs to choose the first narrow milestone. The strongest default is source inventory and data foundation, but that is not yet approved.
-
+The first narrow milestone is now decided: V1 is a faithful Level A digital-library site from rights-verified candidates, plus catalog and metadata search. See ADR-0004 and ADR-0007 for committed scope; use this digest as historical context only.

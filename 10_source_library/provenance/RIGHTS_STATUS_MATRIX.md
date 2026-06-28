@@ -39,9 +39,9 @@ missing to clear it, and a reviewer sign-off column (empty until a human signs).
 - **Track 1 — verbatim** (page images / OCR full text / faithful Level-A editions):
   needs the underlying work **public domain in the hosting jurisdiction**. Year +
   (for named authors) death year are load-bearing.
-- **Track 2 — clean-room recipes** (extract facts, re-express, reorganise): far less
-  date-sensitive; governed by the recipe/compilation rules above. Start on the
-  Group-A pool to de-risk the workflow.
+- **Track 2 — clean-room recipes** (extract facts, re-express, reorganise): post-V1 /
+  V2 Recipe Engine work only. It is far less date-sensitive, but still governed by
+  the recipe/compilation rules above and needs its own ADR before work starts.
 
 ## Matrix
 
@@ -49,7 +49,7 @@ Legend — US/EU: `PD` public domain · `©` under copyright · `?` unresolved (
 input). Artifact: `orig` original printing scanned · `reprint` modern reprint scanned
 · `digital` external digitisation.
 
-### Group A — public domain US + EU (Track-1 ready; strongest pilot pool)
+### Group A — public domain US + EU lean (strongest Track-1 candidate pool)
 
 | slug | pub year | author / death | artifact | US | EU | gap / note | reviewer |
 |---|---|---|---|---|---|---|---|
@@ -74,7 +74,7 @@ input). Artifact: `orig` original printing scanned · `reprint` modern reprint s
 | unknown-1925-frutta-alimentazione-terapia | 1925 | Alfredo Masoni (death yr unknown) | orig | PD | ? | need Masoni death year | |
 | unknown-undated-vero-re-cuochi | undated (web: 1890s) | anon / G. Belloni? | orig | ? | ? | **date not found in scan**; if 1890s & anon → PD both | |
 
-### Group C — under copyright (Track-2 clean-room only; no verbatim)
+### Group C — under copyright (V2 clean-room candidate only; no verbatim)
 
 | slug | pub year | author / death | artifact | US | EU | note | reviewer |
 |---|---|---|---|---|---|---|---|
@@ -101,16 +101,17 @@ input). Artifact: `orig` original printing scanned · `reprint` modern reprint s
 
 ## What this means for V1
 
-- **Track-1 pilot pool (verbatim-safe):** the 9 Group-A books — anchored by Artusi
-  1891, the Mattioli/Dioscoride 1547, and Cervio's *Trinciante* 1593 — are the
-  defensible core. Two (Manuale, Trinciante) are scanned from **Forni facsimiles**:
-  fine to use the historical content, but exclude the reprints' modern additions.
+- **Track-1 pilot pool:** the Group-A records — anchored by Artusi 1891, the
+  Mattioli/Dioscoride 1547, and Cervio's *Trinciante* 1593 — are the strongest review
+  candidates. They are **not public-release approvals** until a reviewer signs off.
+  Two (Manuale, Trinciante) are scanned from **Forni facsimiles**: fine to use the
+  historical content if approved, but exclude the reprints' modern additions.
 - **Group B (5 books)** are US-clear and likely EU-clear; the only blocker is an
   author death year (or, for `vero-re-cuochi`, a publication date). These are the
   highest-value research targets for IB-009.
-- **Track-2 (clean-room)** can in principle draw on the whole corpus, but should
-  **start on Group A** to prove the extraction/re-expression workflow with zero date
-  risk before touching Group C.
+- **Track-2 (clean-room)** belongs to the anticipated V2 Recipe Engine, not V1. When
+  promoted by its own ADR, Group A is the lowest-risk starting pool for proving the
+  extraction/re-expression workflow before touching Group C.
 
 ## Open inputs (hand to IB-009)
 

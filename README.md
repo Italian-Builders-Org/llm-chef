@@ -32,4 +32,4 @@ This single repo holds **both** the planning (numbered rooms) and the website co
 1. Read the docs in the order above to understand the project and how we work.
 2. **Pick up work from GitHub Issues / the Project board**, not from this file. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for the contribution flow (fork, PR, review).
 3. **Code** goes in `/website` (scaffolded in IB-004). Early on, the most useful non-code help is source rights/metadata research and the data contract.
-4. Before the GitHub board exists, `00_project_room/todos/ISSUE_DRAFTS.md` is the staging list of planned issues; it is superseded by the board once issues are created.
+4. Treat `00_project_room/todos/ISSUE_DRAFTS.md` as a frozen planning snapshot; live work belongs in GitHub Issues / the Project board.
