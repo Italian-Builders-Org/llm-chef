@@ -1,79 +1,97 @@
-# Vision Draft
+# Vision
 
-Status: Draft v0.3. V1 scope accepted by ADR-0004; broader vision still draft.
+Status: Draft v0.4. North-Star vision; V1 scope is owned by ADR-0004. The broader vision is intentionally aspirational.
 
-Last updated: 2026-06-27 after ADR-0004 scope cleanup.
+Last updated: 2026-06-28.
 
-## What This Might Be
+## North Star
 
-Chef-LLM is currently aiming to become a live, open-source digital library for historical Italian culinary texts and recipes. The first product should make the collection navigable and useful through inventory, metadata, faithful digital editions, and search.
+Chef-LLM aims to become an open, educational companion platform that resurfaces Italian and broader European culinary heritage in a digestible, navigable form.
 
-AI may become part of the product, but it is not required for the first 2-4 week milestone.
+The recipes themselves are not scarce: they exist in books and online. The scarcity is **curation, organization, and guidance**. Most people don't know where to start, which books to buy, or what to learn, so they hit information overload and stop. Chef-LLM's value is to be the companion that turns a scattered, intimidating corpus into something anyone curious can explore and learn from.
 
-## Current Milestone (V1)
+This is an educational resource first, and an open-source contribution to cultural preservation, not "here are some scanned books, good luck." It is grounded in an existing collection of around 25 scanned historical books (~17 GB), released as open source where rights allow.
 
-The vision is reached in milestones, each scoped by an ADR (V1 → V2 → …). This document stays high-level; ADRs own the scoped detail.
+## The Problem We Solve
 
-The current milestone is **V1**, owned by [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md): faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog + metadata search — not a generic AI assistant, not editorial modernization. See the ADR for authoritative scope and boundaries.
+- The source material is rich but scattered, often untranslated, and overwhelming.
+- Newcomers don't know where to begin or what is worth their time.
+- General LLMs already handle ordinary recipe help, so an "AI chef" alone is not differentiated.
 
-## Confirmed Facts
+The defensible value is the combination of: rare or underused sources, curated provenance, historical and regional classification, editorial rigor, source-grounded retrieval, and a genuinely useful workflow for cooks, researchers, and enthusiasts. If those foundations are weak, model polish and UI will not save the project.
 
-- The local workspace is `/Users/owner/Chef-llm`.
-- The project's repos live under the `Italian-Builders-Org` GitHub org; `llm-chef` is the planning/coordination repo.
-- There is an existing collection of scanned cookbook PDFs, described in context as roughly 20GB and about 25-30 books.
-- The provided book list spans assumed years from the 1500s through the late 1900s, with many books from 1800-1990.
-- The project discussion includes historical Italian cuisine, recipe recovery, source preservation, editorial reconstruction, taxonomy, possible AI assistance, and possible publishing.
-- The team wants a clean local foundation before GitHub issues and project boards.
-- The first milestone target is a live website with basic functionality within 2-4 weeks.
-- V1 scope is accepted in ADR-0004: faithful Level A digital editions for rights-verified pre-1929 candidate sources, plus catalog and metadata search over the inventory.
-- First real users are internal team members, home cooks, the Italian Builders community, and public visitors who reach the web app.
-- Repository documentation should be in English.
-- The project intent is open source, with public data/PDF/model outputs only where rights allow.
-- Publishing and editorial recipe modernization are not first-milestone goals.
+## How We Get There
 
-## Possible Future Directions (Post-V1)
+The vision is reached in milestones, each scoped by its own ADR (V1, then V2, and so on). This document stays high-level and aspirational; ADRs own committed scope.
 
-- Searchable historical cookbook library.
-- Master timeline of cookbooks, authors, periods, regions, and culinary movements.
-- Structured recipe database with tags for ingredients, techniques, measurement precision, region, period, and use.
-- Digital reader or source detail pages for verified public-use materials.
-- Source-grounded AI assistant over curated books and recipes.
-- Open-weight model experiments or fine-tuning later, only if a simpler retrieval baseline is insufficient.
+- **Current milestone, V1:** see [ADR-0004](00_project_room/decisions/adr/0004-v1-scope-faithful-pre-1929-editions.md). Faithful Level A digital editions from rights-verified pre-1929 candidates, plus catalog and metadata search. This is book-level only: a catalog of books and faithful page readers, **not** recipe extraction.
+- **Next milestone, V2 (anticipated):** the **Recipe Engine** below, extracting and classifying individual recipes into the structured database. It needs its own ADR and depends on V1's OCR contract and rights work. It is what unlocks recipe search, the Collana, dish maps, and trending.
+- Everything below (the Engine and the End-State Experiences) is **aspirational**: where we are heading, not committed scope. Each becomes its own ADR when promoted.
 
-## Strategic Tension
+## The Engine: A Structured Recipe Database
 
-An "AI chef" by itself is not differentiated enough. General LLMs are already good at ordinary recipe help.
+Everything downstream depends on turning scanned sources into a structured, queryable recipe database:
 
-The defensible value is more likely in the combination of:
+- **Pipeline:** scan, extract, classify, store, with provenance and citations preserved.
+- **Classification axes** (horizontal and vertical): ingredient/protein (e.g. chicken, beef, vegetarian), course (soups, desserts, and so on), technique, cooking method, region/kitchen (Italian and other European cuisines), period/year, use/function, and measurement precision.
 
-- rare or underused source material
-- curated provenance
-- historical and regional classification
-- editorial rigor
-- source-grounded retrieval
-- a useful product workflow for chefs, researchers, or serious enthusiasts
+A well-classified database is what makes discovery, curation, maps, timelines, and AI search possible.
 
-If those foundations are weak, model training and frontend polish will not save the project.
+## End-State Experiences (Aspirational)
 
-## Current Working Thesis
+Not committed scope: the menu of what the platform could become once the database exists.
 
-The first valuable milestone should be a live digital-library MVP backed by a trustworthy source inventory and a small database. The website can start now, but it should expose what is actually known rather than pretending the full corpus is clean, legal, searchable, or AI-ready.
+### Discovery & Navigation
+- A friendly, inviting UI that resurfaces recipes rather than burying them.
+- **Conversational AI search** with iterative narrowing (e.g. "chicken + butter" returns many results; "+ sage" filters further), exploring by ingredient, technique, region, or period.
+- **Regional maps** showing dishes by place.
+- A **timeline** from the earliest sources to the most recent.
 
-This means V1 is catalog/search/faithful-edition first, with AI as a stretch only after the source/data path works.
+### Curated Works: the "Collana"
+- AI-assisted assembly of *new* curated collections from the database, reorganized by theme (protein, course, region, period) with an editorial point of view.
+- This mirrors how a cook historically authored a book: read widely, test, select what makes the cut, reorganize, add a personal twist, now done at scale with a database and AI.
+- This is **transformation, not republishing**. *Rights caveat:* a recipe's list of ingredients is generally not copyrightable, but the original expressive text often is, so building new works from extracted recipes still requires rights review, not just reorganization.
+
+### Enrichment
+- **Speculative dish imagery** (image generation) for dishes never photographed ("eat with your eyes"), always clearly labeled as speculative, never presented as historical evidence.
+- **Chef collaborations:** webinars or cooking videos of aspiring and well-known chefs trying the dishes.
+
+### Adjacent Knowledge
+- Culinary-adjacent domains in our sources earn their own sections: **agriculture** (e.g. olive cultivation and oil pressing), **butchery** (cuts and techniques), and preservation.
+- Framing: "Italian and European cultural learnings, resurfaced," not strictly recipes.
+
+### Social & Community Engagement
+- Verified users (email + login) engage with each recipe: leave **comments**, post **photos of dishes they've actually cooked**, and **upvote / downvote**.
+- Popularity signals surface the best dishes (a **trending page**, "most cooked," and similar), turning a static library into a living, social space around historical recipes.
+- *Caveat:* this adds accounts, moderation, and trust/safety needs, and community signals (votes, photos, comments) must stay clearly separated from historical source content: opinion is not evidence.
+
+### Community Heritage
+- Let people contribute **family and handwritten recipe books** (e.g. a grandmother's recipes) via PDF, with provenance (name, place of origin, approximate year).
+- These become a preserved, living piece of culinary history, valuable even to contributors who don't cook themselves.
+
+## Who It's For
+
+Curious public and home cooks; aspiring and well-known chefs; culinary and cultural researchers; the Italian Builders community; and families preserving heritage recipes.
+
+## Constraints That Shape The Vision
+
+- **Copyright/rights** is the central constraint. It is why V1 is limited to rights-verified sources, why public rendering is gated, and why the long-term strategy leans on *transformation* (the Collana) rather than republishing. Rights review is a permanent part of the workflow, not a one-time gate.
+- **Authenticity:** source text and editorial interpretation must always be distinguishable. Modernized or interpreted content is labeled, never passed off as the original.
+- **Trust over polish:** a beautiful UI on unreliable data is a liability. Expose what is actually known; never imply the corpus is cleaner, more complete, or more rights-cleared than it is.
 
 ## Explicitly Not V1
 
+Deferred, not rejected. These become GitHub issues / future ADRs once the foundation works:
+
 - Publishing a book or collana.
 - Creating standardized modern versions of historical recipes.
-- Editorially rewriting the source material into new cookbooks.
+- Editorially rewriting source material into new cookbooks.
 - Publicly hosting copyrighted PDFs or OCR text before rights are verified.
 - Fine-tuning or releasing model weights before a retrieval/evaluation baseline exists.
 
-These are not rejected ideas. They are deferred to the backlog so they can become GitHub issues later if the live digital library foundation works.
-
 ## Open Decisions
 
-- Which sources can be safely shown publicly in the first website? (rights — IB-010)
+- Which sources can be safely shown publicly in the first website? (rights, IB-010)
 - What database/hosting stack should V1 use? (IB-005)
 - Does V1 include full-text search for verified sources, or only cleaned digital edition pages plus metadata search?
 - Does V1 include an AI feature, or is AI explicitly a post-V1 stretch?
