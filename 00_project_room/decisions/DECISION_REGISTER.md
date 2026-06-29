@@ -15,7 +15,7 @@ Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0
 - ADR-0005 — Entity slug standard & OKF scope
 - ADR-0006 — Single-repo topology (supersedes ADR-0002)
 - ADR-0007 — V1 web stack: Next.js on Vercel
-- ADR-0008 — Project licenses (code/data/content) — **Proposed**, pending Italian Builders
+- ADR-0008 — Project licenses: code MIT, data CC0, content PD/CC0 — **Accepted**
 
 | Date | Decision | Status | Rationale | Revisit trigger |
 |---|---|---|---|---|
@@ -42,7 +42,7 @@ Significant decisions are recorded as ADRs in [`adr/`](adr/) (start with [`adr/0
 | 2026-06-28 | V1 is delivered in phases: V1a = offline/localhost prototype (private; prove OCR + reader/library UI on the pilot); V1b = public launch, gated on a value-bearing product + the rights sign-off. Refines the earlier "live website in 2-4 weeks" expectation. | Decided | Owner prefers organized, rigor-first setup over rushing a public site; nothing goes public until it brings value. | When V1a validates and a public-launch scope is set. |
 | 2026-06-28 | Public flagship ≠ prototype: Artusi 1891 is the prototype/anchor, but the public launch (V1b) leads with the rare/underused titles, not the ubiquitous Artusi. | Decided | "Rare or underused sources" is the stated differentiator; leading public with the most-available book undercuts it. | If audience testing shows the Artusi name drives more engagement than rarity. |
 | 2026-06-28 | IB-014: source asset manifest format defined — per-source assets each carry a visibility class (`private` / `metadata_only` / `public_release`); `public_release` requires `public_domain_verified`. Format only; populated later with `/data` (IB-013). | Decided | The build needs one source-of-truth for what each asset may expose; visibility derives from the IB-010 rights label. | If the `books.json` contract forces a different shape. |
-| 2026-06-28 | IB-038 (ADR-0008, **Proposed**): code → MIT; data/metadata → CC0; PD-source Level A transcriptions → PD/CC0; future editorial (Level B/C) → CC-BY-SA reserved. | Proposed | Open-source intent + rights constraints: metadata is largely fact; faithful PD transcriptions carry no new copyright. | When the Italian Builders confirm/amend — then add LICENSE files and flip ADR-0008 to Accepted. |
+| 2026-06-28 | IB-038 (ADR-0008, **Accepted**): code = **MIT** (`LICENSE` committed); data/metadata = CC0; PD-source Level A transcriptions = PD/CC0. Editorial content (Level B/C) is V2 scope, licensed by the V2 ADR. | Decided | MIT selected over Apache for simplicity; open-source intent + rights constraints (metadata is largely fact; faithful PD transcriptions carry no new copyright). | When V2 introduces editorial content, or if a formal legal entity is later established. |
 | 2026-06-28 | V1 reader is transcription-only: the only public asset is the Level A transcription. No page-facsimile / "view original page" feature; master PDFs, raw OCR, and page images stay private. | Decided | Product surface is cleaned text (ADR-0004), not scans; serving images is unnecessary and keeps the asset model simple. | If a "view source" verification feature is later wanted for trust/research. |
 
 ## How To Add Decisions
