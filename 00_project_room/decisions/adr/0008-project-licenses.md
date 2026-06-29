@@ -35,8 +35,8 @@ an accepted decision. No `LICENSE` files are committed until the Builders confir
   EU DSM Directive Art. 14). Marking it public domain is the honest, preservation-ethos
   choice; provenance/attribution is provided as good practice, not a legal condition.
 - **Future editorial content (Level B/C interpretation, translations, curated
-  collections) → reserved; recommend CC-BY-SA-4.0.** Keeps original editorial work
-  open, attributed, and share-alike. This is V2 — only the posture is reserved here.
+  collections) is out of V1 scope.** No such content exists in V1; its license is set by
+  the V2 ADR that introduces it.
 - **Hard rule:** licensing never overrides rights. Only `public_domain_verified`
   sources are published; uncleared sources stay `metadata_only` / `private` regardless
   of license.
@@ -46,14 +46,12 @@ an accepted decision. No `LICENSE` files are committed until the Builders confir
 - **LICENSE files:** `LICENSE` (MIT) is committed at the repo root for code. A CC0
   data-license note is added with `/data` (IB-013); per-source content terms surface via
   the asset manifest (IB-014) and are enforced by the UI rights gates (IB-028).
-- **Strategic note for the Builders:** CC0 on transcriptions maximizes openness but
-  gives that transcription work away freely. If the project later wants *proprietary*
-  editorial products (the Collana, publishing, classes — see VISION), keep those
-  **editorial layers** under a separate, more protective license; the underlying PD
-  source transcriptions cannot be meaningfully restricted anyway.
+- **Context for V2 (not a V1 decision):** CC0 on transcriptions maximizes openness. If
+  the project later wants proprietary editorial products (the Collana, publishing,
+  classes; see VISION), that editorial layer can be licensed separately; the underlying
+  PD source transcriptions cannot be meaningfully restricted regardless.
 - **Out of scope:** legal counsel sign-off. Recommended before a public launch (IB-029),
   especially for the EU content posture.
-- Code license (MIT) is adopted and IB-038 (#8) is closed. The future-editorial license
-  (CC-BY-SA) and the open-vs-protected question remain reserved for V2. The copyright
-  holder in `LICENSE` ("Italian Builders and contributors") can be amended to a formal
-  legal entity if the group establishes one.
+- Code license (MIT) is adopted; data (CC0) and content (PD/CC0) terms are set; IB-038
+  (#8) is closed. Editorial-content licensing belongs to V2 (no V1 editorial content
+  exists). Copyright holder: Italian Builders and contributors.

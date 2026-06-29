@@ -37,8 +37,8 @@ This single repo holds **both** the planning (numbered rooms) and the website co
 ## License
 
 - **Code** → MIT (see [`LICENSE`](LICENSE)).
-- **Data / metadata** → CC0 (added with `/data`).
+- **Data / metadata** → CC0.
 - **Content** (Level A transcriptions of public-domain sources) → public domain / CC0.
-- Future editorial content (V2) is reserved under CC-BY-SA.
+- Editorial content (translations, curated works) is out of V1 scope; its license is a V2 decision.
 
 See [ADR-0008](00_project_room/decisions/adr/0008-project-licenses.md). Licensing never overrides rights: no source is published until it is rights-cleared (`public_domain_verified`).
