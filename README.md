@@ -33,3 +33,12 @@ This single repo holds **both** the planning (numbered rooms) and the website co
 2. **Pick up work from GitHub Issues / the Project board**, not from this file. See `00_project_room/routing/CONTRIBUTOR_WORKFLOW.md` for the contribution flow (fork, PR, review).
 3. **Code** goes in `/website` (scaffolded in IB-004). Early on, the most useful non-code help is source rights/metadata research and the data contract.
 4. Treat `00_project_room/todos/ISSUE_DRAFTS.md` as a frozen planning snapshot; live work belongs in GitHub Issues / the Project board.
+
+## License
+
+- **Code** → MIT (see [`LICENSE`](LICENSE)).
+- **Data / metadata** → CC0 (added with `/data`).
+- **Content** (Level A transcriptions of public-domain sources) → public domain / CC0.
+- Future editorial content (V2) is reserved under CC-BY-SA.
+
+See [ADR-0008](00_project_room/decisions/adr/0008-project-licenses.md). Licensing never overrides rights: no source is published until it is rights-cleared (`public_domain_verified`).
