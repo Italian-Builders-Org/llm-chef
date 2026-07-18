@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream text-espresso antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-terracotta text-white px-6 py-2 rounded-lg font-medium 
+           hover:bg-terracotta/90 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-espresso text-espresso px-6 py-2 rounded-lg font-medium 
+           hover:bg-espresso hover:text-cream transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-parchment rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
